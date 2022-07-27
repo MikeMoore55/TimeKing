@@ -18,7 +18,7 @@ $app->add(new BasePathMiddleware($app));
 $app->addErrorMiddleware(true, true, true); 
 
 // set this as route
-$app->get('/watches/all', function (Request $request, Response $response, $args) {
+$app->get('/', function (Request $request, Response $response, $args) {
     $sql = "SELECT * FROM product_info";
  
     try {

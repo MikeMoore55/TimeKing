@@ -1,12 +1,11 @@
 <?php
+
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 use Selective\BasePath\BasePathMiddleware;
 use Slim\Factory\AppFactory;
-
 // require auto load
 require __DIR__ . '/../vendor/autoload.php';
-
 // require db connection file
 require __DIR__ . '/../src/Models/db.php'; 
 
@@ -17,8 +16,7 @@ $app->addRoutingMiddleware();
 $app->add(new BasePathMiddleware($app));
 $app->addErrorMiddleware(true, true, true); 
 
-// set this as route
-$app->get('/watches/all', function (Request $request, Response $response, $args) {
+$app->get('/', function (Request $request, Response $response, $args) {
     $sql = "SELECT * FROM product_info";
  
     try {

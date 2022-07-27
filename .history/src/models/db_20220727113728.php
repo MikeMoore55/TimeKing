@@ -6,7 +6,6 @@ class DB
     private $pass = 'root';
     private $dbname = 'timekings_db';
 
-    // -- ensure pdo extensions for php are enabled to ensure connection to drivers --
     public function connect()
     {
         $conn_str = "mysql:host=$this->host;dbname=$this->dbname";
