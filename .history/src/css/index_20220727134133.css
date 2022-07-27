@@ -1,0 +1,17 @@
+/* color palette = https://coolors.co/202938-7a6340-060a0d-736143-48321a */
+
+/* 
+fonts =
+    - font-family: 'Edu NSW ACT Foundation', cursive;
+    - font-family: 'Titillium Web', sans-serif; 
+*/
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../images/gold-watch-bg-xsmall.jpg);
+    background-position-x: 10;
+}

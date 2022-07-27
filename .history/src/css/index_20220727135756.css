@@ -1,0 +1,47 @@
+/* color palette = https://coolors.co/202938-7a6340-060a0d-736143-48321a */
+
+/* 
+fonts =
+    - font-family: 'Edu NSW ACT Foundation', cursive;
+    - font-family: 'Titillium Web', sans-serif; 
+*/
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../images/gold-watch-bg-small.jpg);
+    background-position-x: 65%;
+    background-position-y: 0%;
+}
+
+.header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+h1 {
+	background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5em;
+    margin-top: 0%;
+    font-weight: 900;
+    text-align: center;
+}
+
+.main{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+}

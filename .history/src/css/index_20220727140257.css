@@ -33,58 +33,28 @@ h1 {
 	-webkit-text-fill-color: transparent;
     font-family: 'Titillium Web', sans-serif;
     font-size: 3.5em;
-    margin: 1% 0% 0% 2%;
+    margin-top: 0%;
     font-weight: 900;
-    text-align: left;
+    text-align: center;
 }
 
 .main{
-    position: relative;
-    margin: 0%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    right: 0%;
     width: 100%;
-    height: 100%;
-    padding-top: 65%;
-    padding-bottom: 5%;
-}
-
-.btn-container{
-    position: relative;
-    width: 40%;
-    margin: 100% 55% 0% 5%;
 }
 
 .store-btn{
-    position: relative;
-    width: 100%;
-    border: solid white 4px;
-    margin-bottom: 10%;
+    position: fixed;
+    width: 40%;
+    bottom: 20%;
+    left: 5%;
+    right: 55%;
+    border: solid white 2px;
     background-color: transparent;
     color: white;
     font-family: 'Titillium Web', sans-serif;
-    font-size:1.8em;
-}
 
-.about-btn{
-    position: relative;
-    width: 100%;
-    border: solid white 4px;
-    background-color: transparent;
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size:1.8em;
-}
-
-.footer{
-    position: relative;
-    width: 100%;
-    margin: 0%;
-    display: grid;
-    grid-template-columns: 36% 32% 32%;
-    color: white;
-}
-
-.footer p{
-    text-align: center;
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
 }
