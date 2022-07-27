@@ -157,18 +157,16 @@ h1 {
 @media(min-width: 1000px) {
     body{
         background-image: url(../images/gold-watch-bg-big.jpg);
-        background-position-x: 0%;
+        background-position-x: 65%;
         background-position-y: 0%;
     }
     
     h1 {
-        font-size: 3.3em;
+        font-size: 4em;
     }
     
     .main{
-        margin-top: 0%;
-        padding: 40% 0% 5% 0%;
-
+        margin-top: 70%;
     }
     
     .btn-container{
@@ -179,12 +177,12 @@ h1 {
     
     .store-btn{
         margin-bottom: 10%;
-        font-size: 1.5em;
+        font-size:2em;
         padding: 2% 5% 2% 5%;
     }
         
     .about-btn{
-        font-size: 1.5em;
+        font-size: 2em;
         padding: 2% 5% 2% 5%;
     }
     
@@ -196,7 +194,7 @@ h1 {
     }
     
     .footer p{
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
 }
