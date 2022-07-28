@@ -32,19 +32,6 @@ body{
     margin: 0%;
 }
 
-.scroll-btns{
-    position: fixed;
-    width: 8%;
-    left: 89%;
-    right: 3%;
-    bottom: 5%;
-}
-
-.scroll-btns img{
-    position: relative;
-    width: 100%;
-}
-
 /* featured all upcoming */
 .main .featured{
     position: relative;

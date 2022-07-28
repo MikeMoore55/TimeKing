@@ -21,7 +21,7 @@ body{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 2.5em;
+    font-size: 3.5em;
     margin: 1% 0% 0% 2%;
     font-weight: 900;
 }
@@ -30,19 +30,6 @@ body{
     position: relative;
     width: 100%;
     margin: 0%;
-}
-
-.scroll-btns{
-    position: fixed;
-    width: 8%;
-    left: 89%;
-    right: 3%;
-    bottom: 5%;
-}
-
-.scroll-btns img{
-    position: relative;
-    width: 100%;
 }
 
 /* featured all upcoming */

@@ -34,15 +34,10 @@ body{
 
 .scroll-btns{
     position: fixed;
-    width: 8%;
-    left: 89%;
-    right: 3%;
+    width: 10%;
+    left: 88%;
+    right: 2%;
     bottom: 5%;
-}
-
-.scroll-btns img{
-    position: relative;
-    width: 100%;
 }
 
 /* featured all upcoming */
