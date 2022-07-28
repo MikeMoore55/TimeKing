@@ -120,49 +120,16 @@ body{
     }
     
     .footer .info a{
-        margin: 2% 0% 2% 0%;
-        font-size: 1.2em;
-    }
-    
-    .footer .info a:active{
-        font-size: 1.5em;
-    }
-}
 
-@media(min-width: 1000px) {
-    
-    .header h1{
-        font-size: 3em;
-    }
-    
-    .main{
-        position: relative;
-        width: 100%;
-        padding: 7% 17% 3% 17%;
-    }
-    
-    .main h2{
-        border-left: solid white 6px;
-        padding-left: 3%;
-        font-size: 1.9em;
-        margin: 4% 0% 0% 2%;
-    }
-    
-    .main p{
-        margin-top: 6%;
-        font-size: 1.4em;
-    }
-    
-    .footer h3{
-        font-size: 1.7em;
-    }
-    
-    .footer .info a{
-        margin: 1% 0% 1% 0%;
+        margin: 2% 0% 2% 0%;
         font-size: 1em;
     }
     
     .footer .info a:active{
-        font-size: 1.2em;
+        text-decoration-line: underline;
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1em;
     }
 }
