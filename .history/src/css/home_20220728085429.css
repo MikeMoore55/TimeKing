@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #202938, #19222d, #141b23, #0e1419, #060a0d);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.header h1{
+    position: relative;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.5em;
+    margin: 1% 0% 0% 2%;
+    font-weight: 900;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    margin: 0%;
+}
+
+.scroll-btns{
+    position: fixed;
+    width: 8%;
+    left: 89%;
+    right: 3%;
+    bottom: 5%;
+}
+
+.scroll-btns img{
+    position: relative;
+    width: 100%;
+}
+
+/* featured all upcoming */
+.main .featured{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    padding: 20% 0% 20% 0%;
+}
+
+.main .all{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    padding: 20% 0% 20% 0%;
+}
+
+.main .upcoming{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    padding: 20% 0% 20% 0%;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+}
+
+.footer h3{
+    text-align: center;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.footer .info{
+    position: relative;
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
+.footer .info a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 1% 0% 1% 0%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.8em;
+}
+
+.footer .info a:active{
+    text-decoration-line: underline;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 1em;
+}
+
+/* ---> MEDIA QUERIES <--- */
+
+@media(min-width: 490px) {
+    
+    .header h1{
+        font-size: 3em;
+    }
+    
+    .scroll-btns{
+        position: fixed;
+        width: 6%;
+        left: 90%;
+        right: 4%;
+        bottom: 5%;
+    }
+    
+    .main .featured{
+        position: relative;
+        width: 100%;
+        height: 40%;
+        padding: 20% 0% 20% 0%;
+    }
+    
+    .main .all{
+        position: relative;
+        width: 100%;
+        height: 40%;
+        padding: 20% 0% 20% 0%;
+    }
+    
+    .main .upcoming{
+        position: relative;
+        width: 100%;
+        height: 40%;
+        padding: 20% 0% 20% 0%;
+    }
+    
+    .footer h3{
+        font-size: 1.7em;
+    }
+    
+    .footer .info{
+        position: relative;
+        display: grid;
+        grid-template-columns: 33.333% 33.333% 33.333%;
+    }
+    
+    .footer .info a{
+        margin: 2% 0% 2% 0%;
+       font-size: 1em;
+    }
+    
+    .footer .info a:active{
+        font-size: 1.4em;
+    }       
+}

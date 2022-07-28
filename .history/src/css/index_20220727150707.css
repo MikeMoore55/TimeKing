@@ -1,0 +1,89 @@
+/* color palette = https://coolors.co/202938-7a6340-060a0d-736143-48321a */
+
+/* 
+fonts =
+    - font-family: 'Edu NSW ACT Foundation', cursive;
+    - font-family: 'Titillium Web', sans-serif; 
+*/
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../images/gold-watch-bg-small.jpg);
+    background-position-x: 65%;
+    background-position-y: 0%;
+}
+
+.header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+h1 {
+	background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5em;
+    margin: 1% 0% 0% 2%;
+    font-weight: 900;
+    text-align: left;
+}
+
+.main{
+    position: relative;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+}
+
+.btn-container{
+    position: relative;
+    width: 40%;
+    margin: 100% 55% 0% 5%;
+}
+
+.store-btn{
+    position: relative;
+    width: 100%;
+    border: solid white 4px;
+    margin-bottom: 10%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1.8em;
+}
+
+.about-btn{
+    position: relative;
+    width: 100%;
+    border: solid white 4px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1.8em;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 36% 32% 32%;
+    color: white;
+}
+
+.footer p{
+    text-align: center;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}

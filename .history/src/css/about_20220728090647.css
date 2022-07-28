@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #202938, #19222d, #141b23, #0e1419, #060a0d);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    padding: 10% 15% 5% 15%;
+}

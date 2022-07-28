@@ -1,0 +1,201 @@
+/* color palette = https://coolors.co/202938-7a6340-060a0d-736143-48321a */
+
+/* 
+fonts =
+    - font-family: 'Edu NSW ACT Foundation', cursive;
+    - font-family: 'Titillium Web', sans-serif; 
+*/
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: fixed;
+    background-image: url(../images/gold-watch-bg-small.jpg);
+    background-position-x: 0%;
+    background-position-y: 3%;
+}
+
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+h1 {
+	background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5em;
+    margin: 1% 0% 0% 2%;
+    font-weight: 900;
+    text-align: left;
+    position: relative;
+}
+
+.main{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 90%;
+    padding: 80% 0% 5% 0%;
+}
+
+.btn-container{
+    position: relative;
+    width: 55%;
+    margin: 100% 40% 0% 5%;
+}
+
+.store-btn{
+    position: relative;
+    width: 100%;
+    border: solid white 4px;
+    margin-bottom: 12%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1.5em;
+}
+
+.store-btn:active{
+    transform: scale(0.9);
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+
+}
+
+.about-btn{
+    position: relative;
+    width: 100%;
+    border: solid white 4px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1.5em;
+}
+
+.about-btn:active{
+    transform: scale(0.9);
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    color: white;
+    padding: 0%;
+    background-color: black;
+}
+
+.footer p{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ---> MEDIA QUERIES <--- */
+
+@media(min-width: 490px) {
+    body{
+        background-image: url(../images/gold-watch-bg-medium.jpg);
+        background-position-x: 65%;
+        background-position-y: 3%;
+    }
+    
+    .header{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        margin: 0%;
+        width: 100%;
+    }
+    
+    h1 {
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+        background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 4em;
+        margin: 1% 0% 0% 2%;
+        font-weight: 900;
+        text-align: left;
+        position: relative;
+    }
+    
+    .main{
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        padding: 0% 0% 5% 0%;
+    
+    }
+    
+    .btn-container{
+        position: relative;
+        width: 37%;
+        margin: 95% 50% 0% 3%;
+    }
+    
+    .store-btn{
+        position: relative;
+        width: 100%;
+        border: solid white 4px;
+        margin-bottom: 12%;
+        background-color: transparent;
+        color: white;
+        font-family: 'Titillium Web', sans-serif;
+        font-size:2em;
+    }
+    
+    .store-btn:active{
+        transform: scale(0.9);
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+        background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+    }
+    
+    .about-btn{
+        position: relative;
+        width: 100%;
+        border: solid white 4px;
+        background-color: transparent;
+        color: white;
+        font-family: 'Titillium Web', sans-serif;
+        font-size:2em;
+    }
+    
+    .about-btn:active{
+        transform: scale(0.9);
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+        background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+    }
+    
+    .footer{
+        position: absolute;
+        top: 92%;
+        width: 100%;
+        left: 0%;
+        color: white;
+        padding: 0%;
+        background-color: transparent;
+    }
+    
+    .footer p{
+        text-align: center;
+        color: white;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+}
