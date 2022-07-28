@@ -159,7 +159,7 @@ body{
     }
 
     .main h2{
-        font-size: 2.5em;
+        font-size: 1.5em;
         border-bottom: solid 2px white;
         margin-left: 5%;
         margin-right: 5%;
@@ -200,14 +200,6 @@ body{
         padding: 5% 5% 5% 5%;
         border: 5px solid;
         border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
-    }
-
-    .main .product-card h4{
-        font-size: 2.2em;
-    }
-    
-    .main .product-card p{
-        font-size: 1.5em;
     }
 
     .footer{

@@ -37,39 +37,35 @@
 
         <div id="featured" class="featured">
             <h2>Featured Watches</h2>
-            <div class="card-holder">
-                <div id="product-card" class="product-card" v-for="item in featured">
-                
-                    <h4>{{ item.watch_name }}</h4>
-                    <!-- 
-                        will come out like R690000-00
-                        want it to be like R690 000-00
-                    -->
-                    <p>R{{ item.watch_price }}-00</p>
-                    <p>{{ item.watch_desc }}</p>
-                </div>
+            <div id="product-card" class="product-card" v-for="item in featured">
+            
+                <h5>{{ item.watch_name }}</h5>
+                <!-- 
+                    will come out like R690000-00
+                    want it to be like R690 000-00
+                -->
+                <p>R{{ item.watch_price }}-00</p>
+                <p>{{ item.watch_desc }}</p>
             </div>
         </div>
 
         <div id="all" class="all">
             <h2>All Watches</h2>
-            <div class="card-holder">
-                <div id="product-card" class="product-card" v-for="item in all">
-                    <h4>{{ item.watch_name }}</h4>
-                    <!-- 
-                        will come out like R690000-00
-                        want it to be like R690 000-00
-                    -->
-                    <p>R{{ item.watch_price }}-00</p>
-                    <p>{{ item.watch_desc }}</p>
-                </div>
+            <div id="product-card" class="product-card" v-for="item in all">
+                <h5>{{ item.watch_name }}</h5>
+                <!-- 
+                    will come out like R690000-00
+                    want it to be like R690 000-00
+                -->
+                <p>R{{ item.watch_price }}-00</p>
+                <p>{{ item.watch_desc }}</p>
             </div>
         </div>
         <div id="upcoming" class="upcoming">
             <h2>Upcoming Watches</h2>
-            <div class="card-holder">
+            <div class="card-holder"></div>
                 <div id="product-card" class="product-card" v-for="item in upcoming">
-                    <h4>{{ item.watch_name }}</h4>
+                    <h5>{{ item.watch_name }}</h5>
                     <!-- 
                         will come out like R690000-00
                         want it to be like R690 000-00
