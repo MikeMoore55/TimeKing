@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../src/js/test.js" defer type="module"></script>
+</head>
+<body>
+    <div id="app">
+        <div>
+            {{ info }}
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div v-for="item in info">
+            <h5>{{ item.watch_name}}</h5>
+            <!-- 
+                will come out like R690000-00
+                want it to be like R690 000-00
+            -->
+            <p>R{{ item.watch_price}}-00</p>
+            <p>{{item.watch_desc}}</p>
+        </div>
+    </div>
+</body>
+</html>
