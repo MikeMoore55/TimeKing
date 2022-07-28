@@ -30,7 +30,7 @@ body{
     position: relative;
     width: 100%;
     margin: 0%;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 .scroll-btns{
@@ -52,28 +52,15 @@ body{
     position: relative;
     width: 100%;
     height: 40%;
-    padding: 5% 15% 2% 15%;
+    padding: 5% 10% 5% 10%;
     color: white;
-}
-
-.main h2{
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5em;
-    border-bottom: solid 2px white;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 15%;
-    padding-bottom: 4%;
 }
 
 .main .all{
     position: relative;
     width: 100%;
     height: 40%;
-    padding: 5% 15% 5% 15%;
+    padding: 5% 10% 5% 10%;
     color: white;
 }
 
@@ -81,16 +68,13 @@ body{
     position: relative;
     width: 100%;
     height: 40%;
-    padding: 5% 15% 5% 15%;
+    padding: 5% 10% 5% 10%;
     color: white;
 }
 
 .main .product-card{
     position: relative;
-    margin-bottom: 5%;
-    padding: 5% 5% 5% 5%;
-    border: 5px solid;
-    border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
+    
 }
 
 .footer{

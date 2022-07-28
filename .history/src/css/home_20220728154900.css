@@ -30,7 +30,7 @@ body{
     position: relative;
     width: 100%;
     margin: 0%;
-    padding-top: 20%;
+    padding-top: 30%;
 }
 
 .scroll-btns{
@@ -65,7 +65,7 @@ body{
     border-bottom: solid 2px white;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     padding-bottom: 4%;
 }
 
