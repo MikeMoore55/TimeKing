@@ -92,12 +92,6 @@ body{
     border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
 }
 
-.main .product-card:hover{
-    transform: scale(1.2);
-    z-index: 5;
-    background-color: #202938;
-}
-
 .main .product-card h4{
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-size: 1.7em;
@@ -206,6 +200,10 @@ body{
         padding: 5% 5% 5% 5%;
         border: 5px solid;
         border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
+    }
+
+    .main .product-card:hover{
+        transform: scale(1.2);
     }
 
     .main .product-card h4{

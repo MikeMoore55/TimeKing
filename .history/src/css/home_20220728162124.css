@@ -95,7 +95,6 @@ body{
 .main .product-card:hover{
     transform: scale(1.2);
     z-index: 5;
-    background-color: #202938;
 }
 
 .main .product-card h4{
