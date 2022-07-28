@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/test.js" defer type="module"></script>
+</head>
+<body>
+    <script type="module">
+        const { createApp } = window.Vue;
+        const component = {
+            data(){
+                return{
+                    info : null
+                }
+            },
+            mounted() {
+                axios
+                .get('/watches/all')
+                .then(response => (this.info = response.data))
+            },
+        
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+        const app = createApp(component)
+        app.mount("#app")
+        })
+    </script>
+    <div id="app">
+
+    </div>
+</body>
+</html>

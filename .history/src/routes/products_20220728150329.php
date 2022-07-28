@@ -73,7 +73,7 @@
 
     // UPCOMING products
     $app->get('/watches/upcoming', function (Request $request, Response $response, $args) {
-        $sql = "SELECT * FROM product_info WHERE watch_available = 'false'";
+        $sql = "SELECT * FROM product_info WHERE watch_rating > 8 && watch_available = 'true'";
      
         try {
           // Get DB Object
