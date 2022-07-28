@@ -255,8 +255,8 @@ body{
     .main h2{
         font-size: 1.8em;
         border-bottom: solid 2px white;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 5%;
         padding-bottom: 3%;
     }
@@ -297,15 +297,15 @@ body{
     }
 
     .main .product-card h4{
-        font-size: 1.6em;
+        font-size: 2.2em;
     }
     
     .main .product-card p{
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     
     .footer h3{
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
     
     .footer .info{
