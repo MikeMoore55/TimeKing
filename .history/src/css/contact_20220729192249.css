@@ -59,24 +59,10 @@ body{
 .main{
     position: relative;
     width: 100%;
-    padding: 20% 0% 5% 0%;
+    padding: 20% 10% 5% 10%;
 }
 
-.scroll-btns{
-    position: fixed;
-    width: 8%;
-    left: 89%;
-    right: 3%;
-    bottom: 5%;
-    z-index: 10;
-}
-
-.scroll-btns img{
-    position: relative;
-    width: 100%;
-}
-
-.main h2{
+.main .h2{
     position: relative;
     text-align: center;
     border-bottom: white solid 1px;
@@ -87,13 +73,6 @@ body{
     font-size: 1.5em;
     margin: 10% 15% 0% 15%;
     font-weight: 900;
-}
-
-.main p{
-    margin-top: 10%;
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    text-align: center;
 }
 
 .footer{
@@ -154,25 +133,7 @@ body{
         width: 100%;
         padding: 14% 15% 5% 15%;
     }
-        
-    .scroll-btns{
-        position: fixed;
-        width: 6%;
-        left: 90%;
-        right: 4%;
-        bottom: 5%;
-    }
 
-    .main h2{
-        font-size: 2.3em;
-        margin: 7% 0% 0% 2%;
-    }
-    
-    .main p{
-        margin-top: 12%;
-        font-size: 1.8em;
-    }
-    
     .footer h3{
         font-size: 2em;
     }
@@ -203,42 +164,5 @@ body{
     
     .nav a:active{
         transform: scale(1.5);
-    }
-
-    .main{
-        position: relative;
-        width: 100%;
-        padding: 7% 17% 3% 17%;
-    }
-
-    .scroll-btns{
-        position: fixed;
-        width: 4%;
-        left: 91%;
-        right: 5%;
-        bottom: 5%;
-    }
-    
-    .main h2{
-        font-size: 1.9em;
-        margin: 4% 0% 0% 2%;
-    }
-    
-    .main p{
-        margin-top: 6%;
-        font-size: 1.4em;
-    }
-    
-    .footer h3{
-        font-size: 1.7em;
-    }
-    
-    .footer .info a{
-        margin: 1% 0% 1% 0%;
-        font-size: 1em;
-    }
-    
-    .footer .info a:active{
-        font-size: 1.2em;
     }
 }
