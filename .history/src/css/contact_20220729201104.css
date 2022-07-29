@@ -75,20 +75,6 @@ body{
     font-weight: 900;
 }
 
-.scroll-btns{
-    position: fixed;
-    width: 8%;
-    left: 89%;
-    right: 3%;
-    bottom: 5%;
-    z-index: 10;
-}
-
-.scroll-btns img{
-    position: relative;
-    width: 100%;
-}
-
 .main .socials{
     position: relative;
     width: 80%;
@@ -223,14 +209,6 @@ body{
         padding: 14% 15% 5% 15%;
     }
 
-    .scroll-btns{
-        position: fixed;
-        width: 6%;
-        left: 90%;
-        right: 4%;
-        bottom: 5%;
-    }
-
     .main h2{
         font-size: 2.3em;
         margin: 7% 0% 0% 2%;
@@ -300,14 +278,6 @@ body{
         padding: 7% 17% 3% 17%;
     }
 
-    .scroll-btns{
-        position: fixed;
-        width: 4%;
-        left: 91%;
-        right: 5%;
-        bottom: 5%;
-    }
-
     .main h2{
         font-size: 1.6em;
         margin: 4% 10% 0% 10%;
@@ -371,8 +341,8 @@ body{
     
     .email .btn{
         position: relative;
-        width: 20%;
-        margin: 2% 40% 5% 40%;
+        width: 40%;
+        margin: 2% 30% 5% 30%;
         background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
         font-family: 'Titillium Web', sans-serif;
         font-weight: 700;
@@ -386,7 +356,7 @@ body{
     
     .main .maps{
         position: relative;
-        margin: 5% 25% 2% 25%;
+        margin: 10% 20% 2% 20%;
     }
 
     .footer h3{

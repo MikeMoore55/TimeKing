@@ -75,20 +75,6 @@ body{
     font-weight: 900;
 }
 
-.scroll-btns{
-    position: fixed;
-    width: 8%;
-    left: 89%;
-    right: 3%;
-    bottom: 5%;
-    z-index: 10;
-}
-
-.scroll-btns img{
-    position: relative;
-    width: 100%;
-}
-
 .main .socials{
     position: relative;
     width: 80%;
@@ -223,43 +209,85 @@ body{
         padding: 14% 15% 5% 15%;
     }
 
-    .scroll-btns{
-        position: fixed;
-        width: 6%;
-        left: 90%;
-        right: 4%;
-        bottom: 5%;
-    }
-
     .main h2{
         font-size: 2.3em;
         margin: 7% 0% 0% 2%;
     }
+
+    .main .socials{
+        position: relative;
+        width: 80%;
+        margin: 10% 10% 10% 10%;
+    }
     
     .main h3{
+        position: relative;
+        font-family: 'Titillium Web', sans-serif;
+        text-align: center;
         font-size: 1.7em;
+        margin: 10% 20% 10% 20%;
+        font-weight: 900;
+        color: white;
+    }
+    
+    .socials .social-media{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    }
+    
+    .socials .social-media .icons{
+        position: relative;
+        width: 50%;
+        margin: 1% 25% 1% 25%;
     }
     
     .main .email{
+        position: relative;
         width: 90%;
         margin: 2% 5% 2% 5%;
     }
     
+    .email form{
+        background-color: transparent;
+        border: 5px solid;
+        border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
+        box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
+    }
+    
     .email p{
         font-size: 1.5em;
+        text-align: center;
+        color: white;
+        font-family: 'Titillium Web', sans-serif;
     }
     
     .email .input{
+        position: relative;
+        width: 80%;
         margin: 2% 10% 2% 10%;
         font-size: 1.5em;
     }
     
     .email .btn{
-        font-size: 1.5em;   
+        position: relative;
+        width: 40%;
+        margin: 2% 30% 5% 30%;
+        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 700;
+        font-size: 1.7em;
+        border: none;
     }
-
+    
+    .email .btn:active{
+        transform: scale(0.9);
+    }
+    
     .main .maps{
-        margin: 10% 20% 2% 20%;
+        position: relative;
+        margin: 10% 5% 2% 5%;
     }
 
     .footer h3{
@@ -300,93 +328,9 @@ body{
         padding: 7% 17% 3% 17%;
     }
 
-    .scroll-btns{
-        position: fixed;
-        width: 4%;
-        left: 91%;
-        right: 5%;
-        bottom: 5%;
-    }
-
     .main h2{
-        font-size: 1.6em;
-        margin: 4% 10% 0% 10%;
-    }
-
-    .main .socials{
-        position: relative;
-        width: 80%;
-        margin: 5% 10% 10% 10%;
-    }
-    
-    .main h3{
-        position: relative;
-        font-family: 'Titillium Web', sans-serif;
-        text-align: center;
-        font-size: 1.4em;
-        margin: 5% 20% 5% 20%;
-        font-weight: 900;
-        color: white;
-    }
-    
-    .socials .social-media{
-        position: relative;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 33.3333% 33.3333% 33.3333%;
-    }
-    
-    .socials .social-media .icons{
-        position: relative;
-        width: 40%;
-        margin: 1% 30% 1% 30%;
-    }
-    
-    .main .email{
-        position: relative;
-        width: 90%;
-        margin: 1% 5% 1% 5%;
-    }
-    
-    .email form{
-        background-color: transparent;
-        border: 5px solid;
-        border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
-        box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
-    }
-    
-    .email p{
-        font-size: 1.2em;
-        text-align: center;
-        color: white;
-        font-family: 'Titillium Web', sans-serif;
-    }
-    
-    .email .input{
-        position: relative;
-        width: 80%;
-        margin: 2% 10% 2% 10%;
-        font-size: 1.1em;
-    }
-    
-    .email .btn{
-        position: relative;
-        width: 20%;
-        margin: 2% 40% 5% 40%;
-        background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 700;
-        font-size: 1.1em;
-        border: none;
-    }
-    
-    .email .btn:active{
-        transform: scale(0.9);
-    }
-    
-    .main .maps{
-        position: relative;
-        margin: 5% 25% 2% 25%;
+        font-size: 1.9em;
+        margin: 4% 0% 0% 2%;
     }
 
     .footer h3{
