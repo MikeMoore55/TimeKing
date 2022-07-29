@@ -1,4 +1,3 @@
-<!-- home page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Titillium+Web&display=swap" rel="stylesheet">
     <!-- css link -->
     <link rel="stylesheet" href="./src/css/home.css">
-    <!-- vue cdn -->
+    <!-- js link -->
     <script src="https://unpkg.com/vue@3"></script>
-    <!-- axios cdn -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- js link for scrolling function -->
+
     <script src="./src/js/scroll-function.js" defer></script>
-    <!-- js link for axios http requesting -->
+
     <script src="./src/js/home.js" defer type="module"></script>
 </head>
 <body>
@@ -27,7 +25,7 @@
         <h1>TimeKing</h1>
     </header>
     <nav id="nav" class="nav">
-        <!-- complete it -->
+
     </nav>
     <main id="main" class="main">
         <div id="scroll-btns" class="scroll-btns">
@@ -36,53 +34,55 @@
             <!-- take to bottom of page -->
             <img src="./src/images/caret-down.png" alt="take to bottom of page down-arrow" class="down-arrow" onclick="bottomPage()">
         </div>
-        <!-- featured products -->
+
         <div id="featured" class="featured">
-            <h2>Featured Watches</h2>
-            <div class="card-holder">
-                <div id="product-card" class="product-card" v-for="item in featured">
-                    <h4>{{ item.watch_name }}</h4>
-                    <p>R{{ item.watch_price }}-00</p>
-                    <p>{{ item.watch_desc }}</p>
-                </div>
+            <div id="product-card" class="product-card" v-for="item in featured">
+                <h2>Featured</h2>
+                <h5>{{ item.watch_name }}</h5>
+                <!-- 
+                    will come out like R690000-00
+                    want it to be like R690 000-00
+                -->
+                <p>R{{ item.watch_price }}-00</p>
+                <p>{{ item.watch_desc }}</p>
             </div>
         </div>
-        <!-- all products -->
+
         <div id="all" class="all">
-            <h2>All Watches</h2>
-            <div class="card-holder">
-                <div id="product-card" class="product-card" v-for="item in all">
-                    <h4>{{ item.watch_name }}</h4>
-                    <p>R{{ item.watch_price }}-00</p>
-                    <p>{{ item.watch_desc }}</p>
-                </div>
+            <div id="product-card" class="product-card" v-for="item in all">
+                <h5>{{ item.watch_name }}</h5>
+                <!-- 
+                    will come out like R690000-00
+                    want it to be like R690 000-00
+                -->
+                <p>R{{ item.watch_price }}-00</p>
+                <p>{{ item.watch_desc }}</p>
             </div>
         </div>
-        <!-- upcoming products -->
         <div id="upcoming" class="upcoming">
-            <h2>Upcoming Watches</h2>
-            <div class="card-holder">
-                <div id="product-card" class="product-card" v-for="item in upcoming">
-                    <h4>{{ item.watch_name }}</h4>
-                    <p>R{{ item.watch_price }}-00</p>
-                    <p>{{ item.watch_desc }}</p>
-                </div>
+            <div id="product-card" class="product-card" v-for="item in upcoming">
+                <h5>{{ item.watch_name }}</h5>
+                <!-- 
+                    will come out like R690000-00
+                    want it to be like R690 000-00
+                -->
+                <p>R{{ item.watch_price }}-00</p>
+                <p>{{ item.watch_desc }}</p>
             </div>
         </div>
     </main>
     <footer id="footer" class="footer">
         <h3>© 2022 TimeKing™</h3>
-        <!-- footer links -->
         <div id="info" class="info">
             <a>contact</a>
             <a>social</a>
             <a>T's & C's</a>
-            <a href="./about.html">about</a>
-            <a href="./sign-in.html">sign in</a>
-            <a href="./sign-up.html">sign up</a>
+            <a href="../pages/about.html">about</a>
+            <a>sign in</a>
+            <a>sign up</a>
             <a>Location</a>
-            <a href="./home.html">store</a>
-            <a href="https://www.linkedin.com/in/michael-moore-66a249231/">Michael Moore</a>
+            <a>store</a>
+            <a>Michael Moore</a>
         </div>
     </footer>
 </body>

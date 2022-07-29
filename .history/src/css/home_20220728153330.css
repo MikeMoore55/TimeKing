@@ -30,7 +30,7 @@ body{
     position: relative;
     width: 100%;
     margin: 0%;
-    padding-top: 20%;
+    padding-top: 15%;
 }
 
 .scroll-btns{
@@ -47,24 +47,12 @@ body{
     width: 100%;
 }
 
-.main h2{
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5em;
-    border-bottom: solid 2px white;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 15%;
-    padding-bottom: 4%;
-}
-
+/* featured all upcoming */
 .main .featured{
     position: relative;
     width: 100%;
     height: 40%;
-    padding: 5% 15% 2% 15%;
+    padding: 5% 15% 5% 15%;
     color: white;
 }
 
@@ -86,26 +74,9 @@ body{
 
 .main .product-card{
     position: relative;
+    border: solid 4px white;
     margin-bottom: 5%;
     padding: 5% 5% 5% 5%;
-    border: 5px solid;
-    border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
-}
-
-.main .product-card:hover{
-    transform: scale(1.2);
-    z-index: 5;
-    background-color: #202938;
-}
-
-.main .product-card h4{
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: 1.7em;
-}
-
-.main .product-card p{
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: 1.2em;
 }
 
 .footer{
@@ -151,10 +122,6 @@ body{
     .header h1{
         font-size: 3em;
     }
-
-    .main{
-        padding-top: 10%;
-    }
     
     .scroll-btns{
         position: fixed;
@@ -163,61 +130,26 @@ body{
         right: 4%;
         bottom: 5%;
     }
-
-    .main h2{
-        font-size: 2.5em;
-        border-bottom: solid 2px white;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 10%;
-        padding-bottom: 4%;
-    }
-
-    .main .card-holder{
-        position: relative;
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
     
     .main .featured{
         position: relative;
         width: 100%;
         height: 40%;
-        padding: 4% 10% 2% 10%;
+        padding: 20% 0% 20% 0%;
     }
     
     .main .all{
         position: relative;
         width: 100%;
         height: 40%;
-        padding: 4% 10% 2% 10%;
+        padding: 20% 0% 20% 0%;
     }
     
     .main .upcoming{
         position: relative;
         width: 100%;
         height: 40%;
-        padding: 4% 10% 2% 10%;
-    }
-
-    .main .product-card{
-        margin-bottom: 5%;
-        margin-right: 5%;
-        padding: 5% 5% 5% 5%;
-        border: 5px solid;
-        border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
-    }
-
-    .main .product-card h4{
-        font-size: 2.2em;
-    }
-    
-    .main .product-card p{
-        font-size: 1.5em;
-    }
-
-    .footer{
-        padding-top: 5%;
+        padding: 20% 0% 20% 0%;
     }
     
     .footer h3{
@@ -246,10 +178,6 @@ body{
         font-size: 2.2em;
     }
     
-    .main{
-        padding-top: 3%;
-    }
-    
     .scroll-btns{
         position: fixed;
         width: 4%;
@@ -258,60 +186,29 @@ body{
         bottom: 5%;
     }
     
-    .main h2{
-        font-size: 1.8em;
-        border-bottom: solid 2px white;
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-bottom: 6%;
-        padding-bottom: 2%;
-    }
-
     .main .featured{
         position: relative;
         width: 100%;
         height: 20%;
-        padding: 2% 10% 2% 10%;
+        padding: 10% 0% 10% 0%;
     }
     
     .main .all{
         position: relative;
         width: 100%;
         height: 20%;
-        padding: 2% 10% 2% 10%;
+        padding: 10% 0% 10% 0%;
     }
     
     .main .upcoming{
         position: relative;
         width: 100%;
         height: 20%;
-        padding: 2% 10% 2% 10%;
-    }
-
-    .main .card-holder{
-        position: relative;
-        display: grid;
-        grid-template-columns: 33.3333% 33.3333% 33.3333%;
-    }
-    
-    .main .product-card{
-        margin-bottom: 5%;
-        margin-right: 5%;
-        padding: 5% 5% 5% 5%;
-        border: 5px solid;
-        border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
-    }
-
-    .main .product-card h4{
-        font-size: 1.6em;
-    }
-    
-    .main .product-card p{
-        font-size: 1.3em;
+        padding: 10% 0% 10% 0%;
     }
     
     .footer h3{
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
     
     .footer .info{

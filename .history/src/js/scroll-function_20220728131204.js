@@ -1,5 +1,3 @@
-/* js functions to make scroll buttons work */
-
 function topPage() { // Top of page
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

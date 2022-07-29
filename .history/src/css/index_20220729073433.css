@@ -18,7 +18,7 @@ body{
     width: 100%;
 }
 
-.header h1{
+.header h1 {
 	background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
 	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
 	-webkit-background-clip: text;
@@ -63,7 +63,7 @@ body{
 
 }
 
-.sign-in-btn{
+.about-btn{
     position: relative;
     width: 100%;
     border: solid white 4px;
@@ -73,7 +73,7 @@ body{
     font-size:1.5em;
 }
 
-.sign-in-btn:active{
+.about-btn:active{
     transform: scale(0.9);
     background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
 	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
@@ -128,7 +128,7 @@ body{
         padding: 2% 5% 2% 5%;
     }
         
-    .sign-in-btn{
+    .about-btn{
         font-size: 2em;
         padding: 2% 5% 2% 5%;
     }
@@ -175,7 +175,7 @@ body{
         padding: 2% 5% 2% 5%;
     }
         
-    .sign-in-btn{
+    .about-btn{
         font-size: 1.5em;
         padding: 2% 5% 2% 5%;
     }
