@@ -155,14 +155,6 @@ body{
         padding: 14% 15% 5% 15%;
     }
         
-    .scroll-btns{
-        position: fixed;
-        width: 6%;
-        left: 90%;
-        right: 4%;
-        bottom: 5%;
-    }
-
     .main h2{
         font-size: 2.3em;
         margin: 7% 0% 0% 2%;
@@ -204,21 +196,11 @@ body{
     .nav a:active{
         transform: scale(1.5);
     }
-    
     .main{
         position: relative;
         width: 100%;
         padding: 7% 17% 3% 17%;
     }
-
-    .scroll-btns{
-        position: fixed;
-        width: 4%;
-        left: 91%;
-        right: 5%;
-        bottom: 5%;
-    }
-    
     
     .main h2{
         font-size: 1.9em;

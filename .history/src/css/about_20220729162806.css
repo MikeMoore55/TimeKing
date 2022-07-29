@@ -59,33 +59,18 @@ body{
 .main{
     position: relative;
     width: 100%;
-    padding: 20% 10% 5% 10%;
-}
-
-.scroll-btns{
-    position: fixed;
-    width: 8%;
-    left: 89%;
-    right: 3%;
-    bottom: 5%;
-    z-index: 10;
-}
-
-.scroll-btns img{
-    position: relative;
-    width: 100%;
+    padding: 10% 10% 5% 10%;
 }
 
 .main h2{
     position: relative;
-    text-align: center;
-    border-bottom: white solid 1px;
+    text-align: left;
     background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.5em;
-    margin: 10% 15% 0% 15%;
+    margin: 10% 0% 0% 2%;
     font-weight: 900;
 }
 
@@ -152,17 +137,9 @@ body{
     .main{
         position: relative;
         width: 100%;
-        padding: 14% 15% 5% 15%;
+        padding: 10% 15% 5% 15%;
     }
-        
-    .scroll-btns{
-        position: fixed;
-        width: 6%;
-        left: 90%;
-        right: 4%;
-        bottom: 5%;
-    }
-
+    
     .main h2{
         font-size: 2.3em;
         margin: 7% 0% 0% 2%;
@@ -204,21 +181,11 @@ body{
     .nav a:active{
         transform: scale(1.5);
     }
-    
     .main{
         position: relative;
         width: 100%;
         padding: 7% 17% 3% 17%;
     }
-
-    .scroll-btns{
-        position: fixed;
-        width: 4%;
-        left: 91%;
-        right: 5%;
-        bottom: 5%;
-    }
-    
     
     .main h2{
         font-size: 1.9em;
