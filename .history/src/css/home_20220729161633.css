@@ -299,7 +299,7 @@ body{
     }
     
     .main{
-        padding-top: 5%;
+        padding-top: 3%;
     }
     
     .scroll-btns{
@@ -311,7 +311,7 @@ body{
     }
     
     .main h2{
-        font-size: 1.5em;
+        font-size: 1.8em;
         border-bottom: solid 2px white;
         margin-left: 15%;
         margin-right: 15%;
@@ -355,11 +355,11 @@ body{
     }
 
     .main .product-card h4{
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
     
     .main .product-card p{
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     
     .footer h3{

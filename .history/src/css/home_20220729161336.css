@@ -14,7 +14,7 @@ body{
     left: 0%;
     background-color: #060a0d;
     z-index: 10;
-    box-shadow: rgb(23, 23, 32) 0px 5px 5px 3px;
+    box-shadow: rgb(30, 29, 29) 5px 5px 3px 2px;
 }
 
 .header h1{
@@ -120,7 +120,6 @@ body{
     padding: 5% 5% 5% 5%;
     border: 5px solid;
     border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
-    box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
 }
 
 .main .product-card:hover{
@@ -299,7 +298,7 @@ body{
     }
     
     .main{
-        padding-top: 5%;
+        padding-top: 3%;
     }
     
     .scroll-btns{
@@ -311,7 +310,7 @@ body{
     }
     
     .main h2{
-        font-size: 1.5em;
+        font-size: 1.8em;
         border-bottom: solid 2px white;
         margin-left: 15%;
         margin-right: 15%;
@@ -355,11 +354,11 @@ body{
     }
 
     .main .product-card h4{
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
     
     .main .product-card p{
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     
     .footer h3{

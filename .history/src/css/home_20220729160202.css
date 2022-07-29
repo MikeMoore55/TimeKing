@@ -12,9 +12,7 @@ body{
     width: 100%;
     top: 0%;
     left: 0%;
-    background-color: #060a0d;
-    z-index: 10;
-    box-shadow: rgb(23, 23, 32) 0px 5px 5px 3px;
+    background-color: #202938;
 }
 
 .header h1{
@@ -24,8 +22,8 @@ body{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 2.3em;
-    margin: 1% 0% 1% 0%;
+    font-size: 2.5em;
+    margin: 1% 0% 0% 2%;
     font-weight: 900;
 }
 
@@ -34,7 +32,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    padding-bottom: 2%;
+    background-color: #202938;
 }
 
 .nav a{
@@ -42,18 +40,7 @@ body{
     text-align: center;
     color: white;
     font-family: 'Titillium Web', sans-serif;
-    text-decoration: none;
-}
 
-.nav a:hover{
-    text-decoration-line: underline;
-    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.nav a:active{
-    transform: scale(1.5);
 }
 
 .main{
@@ -120,7 +107,6 @@ body{
     padding: 5% 5% 5% 5%;
     border: 5px solid;
     border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
-    box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
 }
 
 .main .product-card:hover{
@@ -180,16 +166,7 @@ body{
 @media(min-width: 490px) {
     
     .header h1{
-        margin: 0%;
-        font-size: 3.2em;
-    }
-
-    .nav{
-        padding-bottom: 1%;
-    }
-    
-    .nav a{
-        font-size: 1.3em;
+        font-size: 3em;
     }
 
     .main{
@@ -283,23 +260,11 @@ body{
 @media(min-width: 1000px) {
     
     .header h1{
-        font-size: 2em;
-    }
-
-    .nav{
-        padding-bottom: 1%;
-    }
-    
-    .nav a{
-        font-size: 1.1em;
-    }
-    
-    .nav a:active{
-        transform: scale(1.5);
+        font-size: 2.2em;
     }
     
     .main{
-        padding-top: 5%;
+        padding-top: 3%;
     }
     
     .scroll-btns{
@@ -311,7 +276,7 @@ body{
     }
     
     .main h2{
-        font-size: 1.5em;
+        font-size: 1.8em;
         border-bottom: solid 2px white;
         margin-left: 15%;
         margin-right: 15%;
@@ -355,11 +320,11 @@ body{
     }
 
     .main .product-card h4{
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
     
     .main .product-card p{
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     
     .footer h3{
