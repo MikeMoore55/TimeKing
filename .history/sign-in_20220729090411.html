@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="icon" href="./src/images/watch.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./src/css/sign-in.css">
+    <!-- vue cdn -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- axios cdn -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- js link for axios http requesting -->
+    <script src="./src/js/sign-in.js" defer type="module"></script>
+</head>
+<body>
+    <form>
+        <input v-model="username" type="text" class="input" id="username" />
+        <input v-model="password" type="text" class="input" id="password" />
+    </form>
+</body>
+</html>
