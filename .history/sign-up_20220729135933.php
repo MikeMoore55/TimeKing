@@ -1,10 +1,15 @@
 <?php
-        require './src/models/db.php'; 
+use \Psr\Http\Message\ServerRequestInterface as Request;
+use \Psr\Http\Message\ResponseInterface as Response;
 
 
+
+    
+
+    $app -> post('/new/user', function (Request $request, Response $response, $args){// name
+        
         if($_SERVER["REQUEST_METHOD"]== "POST"){
-
-            // name
+            
             if (empty(trim($_POST["name"]))) {
             $name_error = "**Please enter a name.**";
             $name = "";
@@ -77,31 +82,41 @@
                 $password_error = "";
                 $_SESSION["error"] = FALSE;
             };
-        };
-
-        $sql = "INSERT INTO user_info (`user_name`, `user_surname`, `user_displayname`, `user_email`, `user_password`) VALUES ( '$name', '$surname', '$displayName', '$email', '$password');";
-        if($_SESSION["error"] == FALSE){
-            
-            try {
-                // Get DB Object
-                $database = new DB();
-            
-                // connect to DB
-                $conn = $database->connect();
-            
-                // query
-                $stmt = $conn->query($sql);
-            
-            } catch( PDOException $e ) {
-                $error = array(
-                    "message" => $e->getMessage()                  
-                );
-
-            }
-            header("location: /sign-up.html");
-        } else{
-            echo "error";
         }
+
+        $sql = "INSERT INTO user_info (user_name, user_surname, user_displayname, user_email, user_passwor) VALUES ( :name, :surname, :displayName, :email, :password)";
+       
+        try {
+          $db = new Db();
+          $conn = $db->connect();
+         
+          $stmt = $conn->prepare($sql);
+          $stmt->bindParam(':name', $name);
+          $stmt->bindParam(':surname', $surname);
+          $stmt->bindParam(':displayName', $displayName);
+          $stmt->bindParam(':email', $email);
+          $stmt->bindParam(':password', $password);
+       
+          $result = $stmt->execute();
+       
+          $db = null;
+          $response->getBody()->write(json_encode($result));
+          return $response
+            ->withHeader('content-type', 'application/json')
+            ->withStatus(200);
+        } catch (PDOException $e) {
+          $error = array(
+            "message" => $e->getMessage()
+          );
+       
+          $response->getBody()->write(json_encode($error));
+          return $response
+            ->withHeader('content-type', 'application/json')
+            ->withStatus(500);
+        }
+
+
+    });
 
 ?>
 
@@ -116,7 +131,7 @@
 </head>
 <body>
     <main>
-        <form method="POST" class="sign-up-form">
+        <form method="POST" action="" class="sign-up-form">
             <p>Name:</p>
             <input type="text" name="name" class="input"/>
             <p>Surname:</p>
