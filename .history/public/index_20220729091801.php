@@ -8,7 +8,7 @@ use Slim\Factory\AppFactory;
 require __DIR__ . '/../vendor/autoload.php';
 
 // require db connection file
-require __DIR__ . '/../src/models/db.php'; 
+require __DIR__ . '/../src/Models/db.php'; 
 
 $app = AppFactory::create();
 
