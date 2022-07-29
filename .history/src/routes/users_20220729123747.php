@@ -6,7 +6,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 /* GET REQUESTS */
 
 //all products
-$app -> post('/createNewUser/new', function (Request $request, Response $response, $args){
+$app -> post('user/signIn', function (Request $request, Response $response, $args){
     $data = $request->getParsedBody();
     $name = $_POST["name"];
     $surname = $_POST["surname"];
@@ -14,7 +14,7 @@ $app -> post('/createNewUser/new', function (Request $request, Response $respons
     $email = $_POST["email"];
     $password = $_POST["password"];
    
-    $sql = "INSERT INTO user_info (user_name, user_surname, user_displayname, user_email, user_passwor) VALUES ( :name, :surname, :displayName, :email, :password)";
+    $sql = "INSERT INTO user_info (name, email, phone) VALUES (:name, :email, :phone)";
    
     try {
       $db = new Db();
@@ -22,10 +22,8 @@ $app -> post('/createNewUser/new', function (Request $request, Response $respons
      
       $stmt = $conn->prepare($sql);
       $stmt->bindParam(':name', $name);
-      $stmt->bindParam(':surname', $surname);
-      $stmt->bindParam(':displayName', $displayName);
       $stmt->bindParam(':email', $email);
-      $stmt->bindParam(':password', $password);
+      $stmt->bindParam(':phone', $phone);
    
       $result = $stmt->execute();
    
@@ -45,8 +43,37 @@ $app -> post('/createNewUser/new', function (Request $request, Response $respons
         ->withStatus(500);
     }
 
+    $sql = "INSERT INTO `user_info`(`user_name`, `user_surname`, `user_displayname`, `user_email`, `user_password`) VALUES ( '$name','$surname','$displayName','$email','$password');";
+
+    try {
+        // Get DB Object
+        $database = new DB();
+    
+        // connect to DB
+        $conn = $database->connect();
+    
+        // query
+        $stmt = $conn->query($sql);
+        $users = $stmt->fetchAll(PDO::FETCH_OBJ);
+        $database = null; // clear db object
+    
+        $response->getBody()->write(json_encode($users));
+        return $response
+          ->withHeader('content-type', 'application/json')
+          ->withStatus(200);    
+          
+      } catch( PDOException $e ) {
+          $error = array(
+              "message" => $e->getMessage()
+              
+          );
+          $response->getBody()->write(json_encode($error));
+          return $response
+              ->withHeader('content-type', 'application/json')
+              ->withStatus(500);
+      }
 });
-$app->get('/user/info', function (Request $request, Response $response, $args) {
+$app->get('/users/info', function (Request $request, Response $response, $args) {
     $sql = "SELECT * FROM user_info";
  
     try {
