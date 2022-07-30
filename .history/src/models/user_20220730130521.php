@@ -33,7 +33,7 @@ class SignedInUser implements JsonSerializable{
         return $this->isSignedIn;
     }
 
-    public function setIsSignedIn($isSignedIn){
+    public function setisSignedIn($isSignedIn){
         $this->isSignedIn = $isSignedIn;
 
         return $this;

@@ -9,7 +9,7 @@ class SignedInUser implements JsonSerializable{
 
     public function __construct($isSignedIn, $userEmail, $userPassword, $userDisplayName, $userCart)
     {   
-        $this-> isSignedIn = $isSignedIn;
+        $this-> isSignedIn = $isSignedIn
         $this-> userEmail = $userEmail;
         $this-> userPassword = $userPassword;
         $this-> userDisplayName = $userDisplayName;
@@ -33,7 +33,7 @@ class SignedInUser implements JsonSerializable{
         return $this->isSignedIn;
     }
 
-    public function setIsSignedIn($isSignedIn){
+    public function setUserEmail($isSignedIn){
         $this->isSignedIn = $isSignedIn;
 
         return $this;

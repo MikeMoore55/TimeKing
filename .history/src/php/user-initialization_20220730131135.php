@@ -38,7 +38,7 @@
           if ($username == $verified_username && $password == $verified_password) {
             $signedInUser = new SignedInUser(TRUE, $verified_email, $verified_password, $verified_username, 0);
             $json = json_encode($signedInUser);
-            $file = file_put_contents("signedInUser.json", $json);
+            $file = file_put_contents("signedInUser.json", $json)
             header("location: /home.html");
           }
           else{
