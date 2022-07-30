@@ -116,17 +116,17 @@
 </head>
 <body>
     <main>
-        <form method="POST" class="sign-up-form">
+        <form id="sign-up-form" action="/src/php/sign-up-new-user.php" method="post" class="sign-up-form">
             <p>Name:</p>
-            <input type="text" name="name" class="input"/>
+            <input type="text" v-model="name" name="name" class="input"/>
             <p>Surname:</p>
-            <input type="text" name="surname" class="input"/>
+            <input type="text" v-model="surname" name="surname" class="input"/>
             <p>Username:</p>
-            <input type="text" name="displayName" class="input"/>
+            <input type="text" v-model="displayName" name="displayName" class="input"/>
             <p>Email:</p>
-            <input type="text" name="email" class="input"/>
+            <input type="email" v-model="email" name="email" class="input"/>
             <p>Password:</p>
-            <input type="text" name="password" class="input"/>
+            <input type="password" v-model="password" name="password" class="input"/>
             <br>
             <br>
             <input type="submit" value="sign up" name="signUp" class="btn">

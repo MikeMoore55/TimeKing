@@ -18,13 +18,13 @@
 </head>
 <body>
    <main>
-        <form id="sign-in-form" action="/src/php/sign-in-user.php" method="post" class="sign-in-form">
+        <form id="sign-in-form" action="/src/php/user-initialization.php" method="post" class="sign-in-form">
             <p>email:</p>
-            <input v-model="username" name="username" type="text" class="input" required/>
+            <input v-model="email" name="email" type="text" class="input" />
             <p>password:</p>
-            <input v-model="password" name="password" type="password" class="input" required/>
-            <p>dont have an account?<a href="/sign-up.html">sign up</a></p>
-            <input name="signIn" type="submit" value="sign in" class="btn" />
+            <input v-model="password" name="password" type="text" class="input" />
+            <p>dont have an account?</p>
+            <input name="submit" type="submit" value="sign in" class="btn" />
         </form>
    </main>
 </body>

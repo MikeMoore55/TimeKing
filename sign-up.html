@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeKing</title>
+    <link rel="icon" href="./src/images/watch.png">
+</head>
+<body>
+    <main>
+        <form id="sign-up-form" action="/src/php/sign-up-new-user.php" method="post" class="sign-up-form">
+            <p>Name:</p>
+            <input type="text" v-model="name" name="name" class="input"/>
+            <p>Surname:</p>
+            <input type="text" v-model="surname" name="surname" class="input"/>
+            <p>Username:</p>
+            <input type="text" v-model="displayName" name="displayName" class="input"/>
+            <p>Email:</p>
+            <input type="email" v-model="email" name="email" class="input"/>
+            <p>Password:</p>
+            <input type="password" v-model="password" name="password" class="input"/>
+            <br>
+            <br>
+            <input type="submit" value="sign up" name="signUp" class="btn">
+        </form>
+    </main>
+</body>
+</html>
