@@ -1,0 +1,68 @@
+<!-- contact page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeKing</title>
+    <link rel="icon" href="./src/images/watch.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./src/css/about.css">
+    <!-- js link for scrolling functionality -->
+    <script src="./src/js/scroll-function.js" defer></script>
+
+</head>
+<body>
+    <header id="header" class="header">
+        <h1>TimeKing</h1>
+        <nav id="nav" class="nav">
+            <a href="./home.html">Home</a>
+            <a href="./info.html">Contact</a>
+            <a href="./sign-in.html">Sign In</a>
+            <a>Account</a>
+        </nav>
+    </header>
+    <main id="main" class="main">
+        <h2>Contact Us...</h2>
+        <div id="socials" class="socials">
+            <h3>On Social Media</h3>
+            <div class="social-media">
+                <img src="./src/images/twitter.png" class="icons">
+                <img src="./src/images/instagram.png" class="icons">
+                <img src="./src/images/facebook.png" class="icons">
+            </div>
+        </div>
+        <div id="email" class="email">
+            <form>
+                <h3>Email us here</h3>
+                <p>Your Email Address:</p>
+                <input type="email" class="inputs" required />
+                <p>Your Full Name:</p>
+                <input type="text" class="inputs" required />
+                <p>Your Message: </p>
+                <textarea required></textarea>
+                <br>
+                <input type="submit" class="btn" value="Submit">
+            </form>
+        </div>
+        <div id="maps" class="maps">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="400" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=83%20Rivonia%20Rd,%20Sandhurst,%20Sandton,%202196&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    <a href="https://123movies-to.org"></a>
+                    <br><!-- <--- this was apart of the google maps embedded code -->
+                    <style>.mapouter{position:relative;text-align:right;height:450px;width:400px;}</style>
+                    <a href="https://www.embedgooglemap.net">google maps embedded map</a>
+                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:400px;}</style>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
