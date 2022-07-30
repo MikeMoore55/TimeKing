@@ -26,7 +26,6 @@
             $conn = $database->connect();
         
             $stmt = $conn->prepare($sql);
-            
             $stmt->bindParam(':userName', $userName);
             $stmt->bindParam(':userSurname', $userSurname);
             $stmt->bindParam(':userDisplayName', $userDisplayName);
