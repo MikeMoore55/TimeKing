@@ -26,25 +26,12 @@
           $stmt = $conn->query($sql);
           $userInfo = $stmt->fetchAll(PDO::FETCH_OBJ);
           $database = null;
-
-          foreach ($userInfo as $user => $value) {
-                $verified_username = $value -> user_displayname;
-                $verified_password = $value -> user_password;
-          }
-
-          if ($username == $verified_username && $password == $verified_password) {
-            header("location: /home.html");
-          }
-          else{
-            echo "user not found";
-          }
         }
         catch(PDOException $e){
             $error = array(
-                "message" => $e->getMessage()  
+                "message" => $e->getMessage()
+                
             );
-
-            print_r($error);
         }
 
     }

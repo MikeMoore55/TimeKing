@@ -33,18 +33,13 @@
           }
 
           if ($username == $verified_username && $password == $verified_password) {
-            header("location: /home.html");
-          }
-          else{
-            echo "user not found";
+            header("location: /home.html")
           }
         }
         catch(PDOException $e){
             $error = array(
                 "message" => $e->getMessage()  
             );
-
-            print_r($error);
         }
 
     }
