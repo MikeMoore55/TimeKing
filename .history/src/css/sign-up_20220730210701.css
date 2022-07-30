@@ -40,7 +40,7 @@
     border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
     box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
     width: 80%;
-    margin: 24% 10% 2% 10%;
+    margin: 20% 10% 2% 10%;
     padding: 2% 7% 3% 7%;
 }
 
@@ -60,7 +60,6 @@
     color: white;
     font-family: 'Titillium Web', sans-serif;
     font-size: 1em;
-    margin: 5% 1% 3% 1%;
 }
 
 .sign-up-form .input{
@@ -127,7 +126,7 @@
     
     .sign-up-form{
         width: 70%;
-        margin: 22% 15% 2% 15%;
+        margin: 30% 15% 2% 15%;
         padding: 3% 7% 7% 7%;
     }
     
@@ -178,36 +177,34 @@
         font-size: 2em;
     }
 
-    .sign-up-form{
+    .sign-in-form{
         width: 70%;
-        margin: 7% 15% 2% 15%;
-        padding: 1% 7% 1% 7%;
+        margin: 10% 15% 2% 15%;
+        padding: 1% 7% 3% 7%;
     }
     
-    .sign-up-form h2{
-        font-size: 1.4em;
-        margin: 1% 1% 1% 1%;
+    .sign-in-form h2{
+        font-size: 1.5em;
     }
     
-    .sign-up-form p{
-        font-size: 1.1em;
-        margin: 1% 1% 1% 1%;
+    .sign-in-form p{
+        font-size: 1.2em;
     }
     
-    .sign-up-form .input{
+    .sign-in-form .input{
         font-size: 1.1em;
     }
     
-    .sign-up-form .link-text{
+    .sign-in-form .link-text{
         font-size: 1em;
     }
     
-    .sign-up-form .link{
+    .sign-in-form .link{
         margin-left: 2%;
         font-size: 1.1em;
     }
     
-    .sign-up-form .btn{
+    .sign-in-form .btn{
         width: 30%;
         margin: 1% 35% 1% 35%;
         padding: 1% 2% 1% 2%;

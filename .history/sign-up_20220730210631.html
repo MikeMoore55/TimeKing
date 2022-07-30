@@ -27,15 +27,15 @@
         <form id="sign-up-form" action="/src/php/sign-up-new-user.php" method="post" class="sign-up-form">
             <h2>Sign Up</h2> 
             <p>Name:</p>
-            <input type="text" v-model="name" name="name" class="input" required/>
+            <input type="text" v-model="name" name="name" class="input"/>
             <p>Surname:</p>
-            <input type="text" v-model="surname" name="surname" class="input" required/>
+            <input type="text" v-model="surname" name="surname" class="input"/>
             <p>Username:</p>
-            <input type="text" v-model="displayName" name="displayName" class="input"required/>
+            <input type="text" v-model="displayName" name="displayName" class="input"/>
             <p>Email:</p>
-            <input type="email" v-model="email" name="email" class="input" required/>
+            <input type="email" v-model="email" name="email" class="input"/>
             <p>Password:</p>
-            <input type="password" v-model="password" name="password" class="input" required/>
+            <input type="password" v-model="password" name="password" class="input"/>
             <p class="link-text">Have an account?<a class="link" href="./sign-in.html">Sign In</a></p>
             <input type="submit" value="Sign Up" name="signUp" class="btn">
         </form>

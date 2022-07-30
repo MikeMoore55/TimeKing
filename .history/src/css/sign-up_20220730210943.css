@@ -181,7 +181,7 @@
     .sign-up-form{
         width: 70%;
         margin: 7% 15% 2% 15%;
-        padding: 1% 7% 1% 7%;
+        padding: 1% 7% 3% 7%;
     }
     
     .sign-up-form h2{
@@ -190,7 +190,7 @@
     }
     
     .sign-up-form p{
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin: 1% 1% 1% 1%;
     }
     
