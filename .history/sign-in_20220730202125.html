@@ -21,12 +21,12 @@
    <main id="main" class="main">
         <form id="sign-in-form" action="/src/php/sign-in-user.php" method="post" class="sign-in-form">
             <h2>Sign In</h2>
-            <p>Username:</p>
+            <p>email:</p>
             <input v-model="username" name="username" type="text" class="input" required/>
-            <p>Password:</p>
+            <p>password:</p>
             <input v-model="password" name="password" type="password" class="input" required/>
-            <p class="link-text">Don't have an account?<a class="link" href="/sign-up.html">Sign Up</a></p>
-            <input name="signIn" type="submit" value="Sign In" class="btn" />
+            <p>dont have an account?<a href="/sign-up.html">sign up</a></p>
+            <input name="signIn" type="submit" value="sign in" class="btn" />
         </form>
    </main>
    <footer id="footer" class="footer">

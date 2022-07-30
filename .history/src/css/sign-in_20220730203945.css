@@ -45,7 +45,7 @@ body{
     box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
     width: 80%;
     margin: 40% 10% 2% 10%;
-    padding: 3% 7% 7% 7%;
+    padding: 3% 3% 7% 3%;
 }
 
 .sign-in-form h2{
@@ -63,42 +63,6 @@ body{
     color: white;
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.1em;
-}
-
-.sign-in-form .input{
-    position: relative;
-    width: 100%;
-    font-size: 1.2em;
-}
-
-.sign-in-form .link-text{
-    position: relative;
-    font-size: 0.7em;
-    text-align: center;
-}
-
-.sign-in-form .link{
-    position: relative;
-    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    margin-left: 3%;
-    font-size: 1.2em;
-    text-decoration: underline;
-}
-
-.sign-in-form .btn{
-    position: relative;
-    width: 40%;
-    margin: 1% 30% 1% 30%;
-    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
-    border: none;
-    padding: 2% 2% 2% 2%;
-    font-size: 1.1em;
-}
-
-.sign-in-form .btn:active{
-    transform: scale(0.9);
 }
 
 .footer{
@@ -126,40 +90,6 @@ body{
         margin: 0%;
         font-size: 3.2em;
     }
-    
-    .sign-in-form{
-        width: 70%;
-        margin: 30% 15% 2% 15%;
-        padding: 3% 7% 7% 7%;
-    }
-    
-    .sign-in-form h2{
-        font-size: 2.2em;
-    }
-    
-    .sign-in-form p{
-        font-size: 1.5em;
-    }
-    
-    .sign-in-form .input{
-        font-size: 1.4em;
-    }
-    
-    .sign-in-form .link-text{
-        font-size: 1.1em;
-    }
-    
-    .sign-in-form .link{
-        margin-left: 2%;
-        font-size: 1.3em;
-    }
-    
-    .sign-in-form .btn{
-        width: 40%;
-        margin: 1% 30% 1% 30%;
-        padding: 2% 2% 2% 2%;
-        font-size: 1.5em;
-    }
 
     .footer{
         bottom: 0%;
@@ -178,40 +108,6 @@ body{
 
     .header h1{
         font-size: 2em;
-    }
-
-    .sign-in-form{
-        width: 70%;
-        margin: 10% 15% 2% 15%;
-        padding: 1% 7% 3% 7%;
-    }
-    
-    .sign-in-form h2{
-        font-size: 1.5em;
-    }
-    
-    .sign-in-form p{
-        font-size: 1.2em;
-    }
-    
-    .sign-in-form .input{
-        font-size: 1.1em;
-    }
-    
-    .sign-in-form .link-text{
-        font-size: 1em;
-    }
-    
-    .sign-in-form .link{
-        margin-left: 2%;
-        font-size: 1.1em;
-    }
-    
-    .sign-in-form .btn{
-        width: 30%;
-        margin: 1% 35% 1% 35%;
-        padding: 1% 2% 1% 2%;
-        font-size: 1.2em;
     }
 
     .footer{

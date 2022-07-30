@@ -97,10 +97,6 @@ body{
     font-size: 1.1em;
 }
 
-.sign-in-form .btn:active{
-    transform: scale(0.9);
-}
-
 .footer{
     position: fixed;
     bottom: 0%;
@@ -182,7 +178,7 @@ body{
 
     .sign-in-form{
         width: 70%;
-        margin: 10% 15% 2% 15%;
+        margin: 11% 15% 2% 15%;
         padding: 1% 7% 3% 7%;
     }
     

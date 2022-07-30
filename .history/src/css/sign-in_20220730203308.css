@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #202938, #19222d, #141b23, #0e1419, #060a0d);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+}
+
+.header h1{
+    position: relative;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.3em;
+    margin: 1% 0% 1% 0%;
+    font-weight: 900;
+}
+
+.main{
+    position: relative;
+    padding-top: 20%;
+    width: 100%;
+}
+
+.sign-in-form{
+    position: relative;
+    border: 5px solid;
+    border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
+    box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
+    width: 90%;
+    margin: 20% 5% 2% 5%;
+    padding: 2% 3% 2% 3%;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.footer p{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.8em;
+}
+
+/* ---> MEDIA QUERIES <--- */
+
+@media(min-width: 490px) {
+
+    .header h1{
+        margin: 0%;
+        font-size: 3.2em;
+    }
+
+    .footer{
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .footer p{
+        font-size: 1.2em;
+    }
+
+}
+
+@media(min-width: 1000px) {
+
+    .header h1{
+        font-size: 2em;
+    }
+
+    .footer{
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .footer p{
+        font-size: 1em;
+    }
+
+}

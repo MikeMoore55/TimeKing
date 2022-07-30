@@ -1,0 +1,49 @@
+
+.footer{
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.footer p{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.8em;
+}
+
+/* ---> MEDIA QUERIES <--- */
+
+@media(min-width: 490px) {
+
+    .footer{
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .footer p{
+        font-size: 1.2em;
+    }
+
+}
+
+@media(min-width: 1000px) {
+
+    .footer{
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .footer p{
+        font-size: 1em;
+    }
+
+}
