@@ -20,9 +20,9 @@
    <main>
         <form id="sign-in-form" action="/src/php/user-initialization.php" method="post" class="sign-in-form">
             <p>email:</p>
-            <input v-model="username" name="username" type="text" class="input" required/>
+            <input v-model="email" name="email" type="email" class="input" required/>
             <p>password:</p>
-            <input v-model="password" name="password" type="password" class="input" required/>
+            <input v-model="password" name="password" type="text" class="input" required/>
             <p>dont have an account?</p>
             <input name="signIn" type="submit" value="sign in" class="btn" />
         </form>
