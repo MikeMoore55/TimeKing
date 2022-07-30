@@ -1,12 +1,11 @@
 <?php
     /* Signed In User class */
     class SignedInUser implements JsonSerializable{
-
-        public $isSignedIn; // will be either true or false
+        public $isSignedIn;
         public $userEmail;
         public $userPassword;
         public $userDisplayName;
-        public $userCart; // when user adds to cart item will be added
+        public $userCart;
 
         public function __construct($isSignedIn, $userEmail, $userPassword, $userDisplayName, $userCart)
         {   

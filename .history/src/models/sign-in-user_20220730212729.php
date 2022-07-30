@@ -6,7 +6,7 @@
         public $userEmail;
         public $userPassword;
         public $userDisplayName;
-        public $userCart; // when user adds to cart item will be added
+        public $userCart; // when user adds to cart item will be added will change
 
         public function __construct($isSignedIn, $userEmail, $userPassword, $userDisplayName, $userCart)
         {   

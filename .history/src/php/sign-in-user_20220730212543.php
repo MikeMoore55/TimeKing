@@ -59,6 +59,7 @@
       );
       /* if all is incorrect user will be taken back to sign in page */
       header("location: /sign-in.html");
+      print_r($error);
     }
 
   }
