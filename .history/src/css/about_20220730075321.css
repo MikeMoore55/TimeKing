@@ -135,7 +135,6 @@ body{
 .staff .staff-card:hover{
     z-index: 5;
     transform: scale(1.5);
-    background-color: #202938;
 }
 
 .staff-card .image{

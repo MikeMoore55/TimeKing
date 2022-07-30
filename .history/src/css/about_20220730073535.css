@@ -99,7 +99,6 @@ body{
     color: white;
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
-    margin-top: 10%;
 }
  
 .main p{
@@ -117,7 +116,6 @@ body{
 .staff .staff-display{
     position: relative;
     width: 100%;
-    margin-top: 10%;
 }
 
 .staff .staff-card{
@@ -127,15 +125,9 @@ body{
     box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
     width: 90%;
     margin: 2% 5% 2% 5%;
-    padding: 1% 2% 1% 2%;
+    padding: 2% 5% 2% 5%;
     display: grid;
     grid-template-columns: 30% 70%;
-}
-
-.staff .staff-card:hover{
-    z-index: 5;
-    transform: scale(1.5);
-    background-color: #202938;
 }
 
 .staff-card .image{
@@ -204,7 +196,7 @@ body{
     .main{
         position: relative;
         width: 100%;
-        padding: 14% 12% 5% 12%;
+        padding: 14% 15% 5% 15%;
     }
         
     .scroll-btns{
@@ -220,16 +212,9 @@ body{
         margin: 7% 0% 0% 2%;
     }
     
-    .main h3{
-        font-size: 1.7em;
-    }
-     
     .main p{
-        font-size: 1.5em;
-    }
-    
-    .staff-card .staff-info{
-        font-size: 1em;
+        margin-top: 12%;
+        font-size: 1.8em;
     }
     
     .footer h3{
@@ -267,7 +252,7 @@ body{
     .main{
         position: relative;
         width: 100%;
-        padding: 7% 15% 3% 15%;
+        padding: 7% 17% 3% 17%;
     }
 
     .scroll-btns{
@@ -283,36 +268,9 @@ body{
         margin: 4% 0% 0% 2%;
     }
     
-    .main h3{
-        margin-top: 7%;
-        font-size: 1.5em;
-    }
-     
     .main p{
-        font-size: 1.3em;
-    }
-    
-    .staff .staff-display{
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    
-    .staff .staff-card{
-        width: 98%;
-        margin: 1% 1% 1% 1%;
-        padding: 1% 1% 1% 1%;
-        display: grid;
-        grid-template-columns: 30% 70%;
-    }
-    
-    .staff-card .image{
-        position: relative;
-        width: 100%;
-        border-radius: 50%;
-    }
-    
-    .staff-card .staff-info{
-        font-size: 0.8em;
+        margin-top: 6%;
+        font-size: 1.4em;
     }
     
     .footer h3{
