@@ -5,7 +5,7 @@
     // require db connection file
     require __DIR__ . '/../models/db.php';
     // require user model
-    require __DIR__ . '/../models/user.php';
+    require __DIR__ . '/../models/sign-in-user.php';
 
     if (isset($_POST["signIn"])) {
         
