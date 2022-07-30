@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+}
+
+.header h1{
+    position: relative;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.3em;
+    margin: 1% 0% 1% 0%;
+    font-weight: 900;
+}
+
+.main{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #202938, #19222d, #141b23, #0e1419, #060a0d);
+}
+
+.sign-up-form{
+    position: relative;
+    border: 5px solid;
+    border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
+    box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
+    width: 80%;
+    margin: 20% 10% 2% 10%;
+    padding: 2% 7% 3% 7%;
+}
+
+.sign-up-form h2{
+    position: relative;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5em;
+}
+
+.sign-up-form p{
+    position: relative;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+}
+
+.sign-up-form .input{
+    position: relative;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.sign-up-form .link-text{
+    position: relative;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.sign-up-form .link{
+    position: relative;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin-left: 3%;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.sign-up-form .btn{
+    position: relative;
+    width: 40%;
+    margin: 1% 30% 1% 30%;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+    border: none;
+    padding: 2% 2% 2% 2%;
+    font-size: 1.1em;
+}
+
+.sign-up-form .btn:active{
+    transform: scale(0.9);
+}
+
+.footer{
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.footer p{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.8em;
+}
+
+/* ---> MEDIA QUERIES <--- */
+
+@media(min-width: 490px) {
+
+    .header h1{
+        margin: 0%;
+        font-size: 3.2em;
+    }
+    
+    .sign-up-form{
+        width: 70%;
+        margin: 30% 15% 2% 15%;
+        padding: 3% 7% 7% 7%;
+    }
+    
+    .sign-up-form h2{
+        font-size: 2.2em;
+    }
+    
+    .sign-up-form p{
+        font-size: 1.5em;
+    }
+    
+    .sign-up-form .input{
+        font-size: 1.4em;
+    }
+    
+    .sign-up-form .link-text{
+        font-size: 1.1em;
+    }
+    
+    .sign-up-form .link{
+        margin-left: 2%;
+        font-size: 1.3em;
+    }
+    
+    .sign-up-form .btn{
+        width: 40%;
+        margin: 1% 30% 1% 30%;
+        padding: 2% 2% 2% 2%;
+        font-size: 1.5em;
+    }
+
+    .footer{
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .footer p{
+        font-size: 1.2em;
+    }
+
+}
+
+@media(min-width: 1000px) {
+
+    .header h1{
+        font-size: 2em;
+    }
+
+    .sign-in-form{
+        width: 70%;
+        margin: 10% 15% 2% 15%;
+        padding: 1% 7% 3% 7%;
+    }
+    
+    .sign-in-form h2{
+        font-size: 1.5em;
+    }
+    
+    .sign-in-form p{
+        font-size: 1.2em;
+    }
+    
+    .sign-in-form .input{
+        font-size: 1.1em;
+    }
+    
+    .sign-in-form .link-text{
+        font-size: 1em;
+    }
+    
+    .sign-in-form .link{
+        margin-left: 2%;
+        font-size: 1.1em;
+    }
+    
+    .sign-in-form .btn{
+        width: 30%;
+        margin: 1% 35% 1% 35%;
+        padding: 1% 2% 1% 2%;
+        font-size: 1.2em;
+    }
+
+    .footer{
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .footer p{
+        font-size: 1em;
+    }
+
+}
