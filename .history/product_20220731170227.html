@@ -31,11 +31,7 @@
             <p>{{ selectedProduct.rating }}/10</p>
             <p>{{ selectedProduct.qty }} left</p>
 
-            <form action="./src/php/cart.php">
-                <textarea hidden name="product-name">{{selectedProduct.name}}</textarea>
-                <textarea hidden name="product-price">{{selectedProduct.price}}</textarea>
-                <input type="submit" name="cart" value="add to cart"/>
-            </form>
+            <button><a href="./cart.html">Add To Cart</a></button>
             <button><a href="./home.html">Back</a></button>
         </div>
     </main>
