@@ -26,12 +26,12 @@
             <p>Hello there, {{user.userDisplayName}}!</p>
             <p>Its great to have you back...</p>
             <p>what do you wish to view:</p>
-            <button @click="displayEmail()">Your Email Address</button>
-            <button @click="displayCart()">Your Cart</button>
-            <button @click="displayPassword()">Your Password</button>
-            <div id="email" class="info" @click="hideEmail()">{{ user.userEmail }}</div>
-            <div id="cart" class="info" @click="hideCart()">{{ user.userCart}}</div>
-            <div id="password" class="info" @click="hidePassword()">{{ user.userPassword }}</div>
+            <button onclick="displayEmail()">Your Email Address</button>
+            <button onclick="displayCart()">Your Cart</button>
+            <button>Your Password</button>
+            <div id="email" class="info">{{ user.userEmail }}</div>
+            <div id="cart" class="info">{{ user.userCart}}</div>
+            <div id="password" class="info">{{ user.userPassword }}</div>
         </div>
     </main>
 </body>
