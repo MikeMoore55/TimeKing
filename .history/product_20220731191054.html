@@ -1,0 +1,47 @@
+<!-- individual product section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeKing</title>
+    <link rel="icon" href="./src/images/watch.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./src/css/about.css">
+    <!-- vue cdn -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- axios cdn -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- js link for product page -->
+    <script src="./src/js/product.js" defer type="module"></script>
+    <!-- js link for scrolling functionality -->
+    <script src="./src/js/scroll-function.js" defer></script>
+</head>
+<body>
+    <main id="main" class="main">
+        <div id="info">
+            <div id="product" class="product" v-for="item in selectedProduct">
+                <div class="user" v-for="item in user">
+                <h3>{{ selectedProduct.name }}</h3>
+                <p>R{{ selectedProduct.price }}-00</p>
+                <p>{{ selectedProduct.description }}</p>
+                <p>{{ selectedProduct.rating }}/10</p>
+                <p>{{ selectedProduct.qty }} left</p>
+                    <form action="./src/php/cart.php" method="post">
+                        <textarea hidden name="user-name">{{user.userDisplayName}}</textarea>
+                        <textarea hidden name="product-name">{{selectedProduct.name}}</textarea>
+                        <textarea hidden name="product-price">{{selectedProduct.price}}</textarea>
+                        <input type="submit" name="cart" value="add to cart"/>
+                    </form>
+                    <button><a href="./home.html">Back</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

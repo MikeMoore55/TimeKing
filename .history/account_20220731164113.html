@@ -1,0 +1,38 @@
+<!-- user account page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeKing</title>
+    <link rel="icon" href="./src/images/watch.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./src/css/account.css">
+    <!-- vue cdn -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- axios cdn -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- js link for axios http requesting -->
+    <script src="./src/js/account.js" defer type="module"></script>
+</head>
+<body>
+    <main id="main" class="main">
+        <div id="user-info" class="user" v-for="item in user">
+            <p>Hello there, {{user.userDisplayName}}!</p>
+            <p>Its great to have you back...</p>
+            <p>what do you wish to view:</p>
+            <button onclick="displayEmail()">Your Email Address</button>
+            <button onclick="displayCart()">Your Cart</button>
+            <button onclick="displayPassword()">Your Password</button>
+            <div id="email" class="info">{{ user.userEmail }}</div>
+            <div id="cart" class="info">{{ user.userCart}}</div>
+            <div id="password" class="info">{{ user.userPassword }}</div>
+        </div>
+    </main>
+</body>
+</html>
