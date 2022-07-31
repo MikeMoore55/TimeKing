@@ -232,12 +232,12 @@
     }
 
     .main .product p{
-        margin: 1% 1% 1% 1%;
-        font-size: 1em;
+        margin: 3% 2% 3% 2%;
+        font-size: 1.2em;
     }
 
     .main .product h2{
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     
     .main .product .btn{
@@ -246,7 +246,7 @@
         margin: 1% 30% 2% 30%;
         background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
         border: none;
-        padding: 1% 1% 1% 1%;
+        padding: 2% 2% 2% 2%;
         font-size: 1em;
     }
     
@@ -257,7 +257,7 @@
         margin: 1% 30% 100% 30%;
         background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
         border: none;
-        padding: 1% 1% 1% 1%;
+        padding: 2% 2% 2% 2%;
         font-size: 1em;
         text-decoration: none;
     }

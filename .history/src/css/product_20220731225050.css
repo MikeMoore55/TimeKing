@@ -232,7 +232,7 @@
     }
 
     .main .product p{
-        margin: 1% 1% 1% 1%;
+        margin: 3% 2% 3% 2%;
         font-size: 1em;
     }
 
@@ -246,7 +246,7 @@
         margin: 1% 30% 2% 30%;
         background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
         border: none;
-        padding: 1% 1% 1% 1%;
+        padding: 2% 2% 2% 2%;
         font-size: 1em;
     }
     

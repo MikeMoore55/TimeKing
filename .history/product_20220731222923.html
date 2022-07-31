@@ -34,36 +34,23 @@
         <div id="info">
             <div id="product" class="product" v-for="item in selectedProduct">
                 <div class="user" v-for="item in user">
-                    <!-- add picture (TODO) -->
-                    <h2>{{ selectedProduct.name }}</h2>
-                    <p>Price: R{{ selectedProduct.price }}-00</p>
-                    <p>Description: {{ selectedProduct.description }}</p>
-                    <p>Rate: {{ selectedProduct.rating }}/10</p>
-                    <p>Qty: {{ selectedProduct.qty }} left</p>
+                    <h3>{{ selectedProduct.name }}</h3>
+                    <p>R{{ selectedProduct.price }}-00</p>
+                    <p>{{ selectedProduct.description }}</p>
+                    <p>{{ selectedProduct.rating }}/10</p>
+                    <p>{{ selectedProduct.qty }} left</p>
                     <form action="./src/php/cart.php" method="post">
+                        <p>{{user.userDisplayName}}</p>
                         <textarea hidden name="user-name">{{user.userDisplayName}}</textarea>
                         <textarea hidden name="product-name">{{selectedProduct.name}}</textarea>
                         <textarea hidden name="product-price">{{selectedProduct.price}}</textarea>
-                        <input type="submit" name="cart" value="Add to Cart" class="btn"/>
+                        <input type="submit" name="cart" value="add to cart"/>
                     </form>
                     <button><a href="./home.html">Back</a></button>
                 </div>
             </div>
         </div>
     </main>
-    <footer id="footer" class="footer">
-        <h3>© 2022 TimeKing™</h3>
-        <div id="info" class="info">
-            <a>contact</a>
-            <a>social</a>
-            <a>T's & C's</a>
-            <a href="./about.html">about</a>
-            <a href="./sign-in.html">sign in</a>
-            <a href="./sign-up.html">sign up</a>
-            <a href="./contact.html">Location</a>
-            <a href="./home.html">store</a>
-            <a>Michael Moore</a>
-        </div>
-    </footer>
+    
 </body>
 </html>

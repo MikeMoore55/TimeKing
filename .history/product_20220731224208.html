@@ -1,4 +1,4 @@
-<!-- user account page -->
+<!-- individual product section -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Titillium+Web&display=swap" rel="stylesheet">
     <!-- css link -->
-    <link rel="stylesheet" href="./src/css/account.css">
+    <link rel="stylesheet" href="./src/css/product.css">
     <!-- vue cdn -->
     <script src="https://unpkg.com/vue@3"></script>
     <!-- axios cdn -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- js link for axios http requesting -->
-    <script src="./src/js/account.js" defer type="module"></script>
+    <!-- js link for product page -->
+    <script src="./src/js/product.js" defer type="module"></script>
 </head>
 <body>
     <header id="header" class="header">
@@ -31,19 +31,24 @@
         </nav>
     </header>
     <main id="main" class="main">
-        <div id="user-info" class="user" v-for="item in user">
-            <h2>Account of: {{user.userDisplayName}} </h2>
-            <p class="kind-msg">Hello there, {{user.userDisplayName}}! Its great to have you back...</p>
-            <h4>what do you wish to view:</h4>
-            <div class="btns-container">
-                <button @click="displayEmail()">Your Email</button>
-                <button @click="displayCart()">Your Cart</button>
-                <button @click="displayPassword()">Your Password</button>
+        <div id="info">
+            <div id="product" class="product" v-for="item in selectedProduct">
+                <div class="user" v-for="item in user">
+                    <!-- add picture (TODO) -->
+                    <h3>{{ selectedProduct.name }}</h3>
+                    <p>Price: R{{ selectedProduct.price }}-00</p>
+                    <p>Description: {{ selectedProduct.description }}</p>
+                    <p>Rate: {{ selectedProduct.rating }}/10</p>
+                    <p>Qty: {{ selectedProduct.qty }} left</p>
+                    <form action="./src/php/cart.php" method="post">
+                        <textarea hidden name="user-name">{{user.userDisplayName}}</textarea>
+                        <textarea hidden name="product-name">{{selectedProduct.name}}</textarea>
+                        <textarea hidden name="product-price">{{selectedProduct.price}}</textarea>
+                        <input type="submit" name="cart" value="add to cart"/>
+                    </form>
+                    <button><a href="./home.html">Back</a></button>
+                </div>
             </div>
-            <!-- make so user can update their info (TODO) -->
-            <div id="email" class="info" @click="hideEmail()">Your Email: {{ user.userEmail }}</div>
-            <div id="cart" class="info" @click="hideCart()"><a href="./cart.html">Go To Cart</a></div>
-            <div id="password" class="info" @click="hidePassword()">Your Password: {{ user.userPassword }}</div>
         </div>
     </main>
     <footer id="footer" class="footer">
