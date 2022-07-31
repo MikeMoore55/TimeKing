@@ -73,7 +73,7 @@
         }
     });
 
-    // UPCOMING 
+    // UPCOMING products
     $app->get('/watches/upcoming', function (Request $request, Response $response, $args) {
         $sql = "SELECT * FROM product_info WHERE watch_available = 'false'";
      
@@ -105,7 +105,5 @@
                 ->withStatus(500);
         }
     });
-
-    // SELECTED 
     
 ?>
