@@ -3,8 +3,6 @@ import selectedProductArray from "../php/selectedProduct.json" assert { type: "j
 /* get signed in user */
 import signedInUser from "../php/signedInUser.json" assert { type: "json" };
 
-/* make that user has to be signed in to add to cart (TODO) */
-
 const { createApp } = window.Vue;
 const component = {
     data(){
