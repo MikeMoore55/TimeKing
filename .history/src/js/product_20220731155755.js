@@ -5,13 +5,13 @@ const { createApp } = window.Vue;
 const component = {
     data(){
         return{
-            selectedProduct : selectedProductArray,
+            selectedProduct : JSON.parse(selectedProductArray),
         }
     },
     methods: {
     },
     mounted() {
-        console.log(this.selectedProduct)
+        selectedProduct
     },
 }
 /* mount on main */

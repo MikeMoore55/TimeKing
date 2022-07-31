@@ -6,12 +6,18 @@ const component = {
     data(){
         return{
             selectedProduct : selectedProductArray,
+            array : []
         }
     },
     methods: {
+        toArray(){
+            array = JSON.parse(selectedProduct)
+    
+        }
     },
     mounted() {
-        console.log(this.selectedProduct)
+        console.log(this.selectedProduct),
+        this.toArray()
     },
 }
 /* mount on main */

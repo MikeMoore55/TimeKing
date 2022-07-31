@@ -24,12 +24,10 @@
 </head>
 <body>
     <main id="main" class="main">
-        <div id="product" class="product" v-for="item in selectedProduct">
-            <h3>{{ selectedProduct.name }}</h3>
-            <p>R{{ selectedProduct.price }}-00</p>
-            <p>{{ selectedProduct.description }}</p>
-            <p>{{ selectedProduct.rating }}/10</p>
-            <p>{{ selectedProduct.qty }} left</p>
+        <div v-for="item in selectedProduct">
+            <h3>{{ item.watch_name }}</h3>
+            <p>R{{ item.watch_price }}-00</p>
+            <p>{{ item.watch_desc }}</p>
         </div>
     </main>
 </body>

@@ -5,10 +5,8 @@ const { createApp } = window.Vue;
 const component = {
     data(){
         return{
-            selectedProduct : selectedProductArray,
+            selectedProduct : selectedProductArray
         }
-    },
-    methods: {
     },
     mounted() {
         console.log(this.selectedProduct)
@@ -17,5 +15,5 @@ const component = {
 /* mount on main */
 window.addEventListener('DOMContentLoaded', () => {
   const app = createApp(component)
-  app.mount("#product")
+  app.mount("#main")
 })

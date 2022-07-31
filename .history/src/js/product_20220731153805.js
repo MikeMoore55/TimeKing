@@ -5,10 +5,8 @@ const { createApp } = window.Vue;
 const component = {
     data(){
         return{
-            selectedProduct : selectedProductArray,
+            selectedProduct : selectedProductArray
         }
-    },
-    methods: {
     },
     mounted() {
         console.log(this.selectedProduct)
