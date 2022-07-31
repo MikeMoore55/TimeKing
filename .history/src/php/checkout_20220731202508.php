@@ -6,11 +6,11 @@
     // require db connection file
     require __DIR__ . '/../models/db.php';
 
-    if (isset($_POST["confirm"])) {
+
+
+    if (isset($_POST["cart"])) {
 
         $username = $_POST["username"];
-
-        // add mailer to send confirmation before deleting from cart(TODO)
 
         $sql = "DELETE FROM cart_info WHERE cart_user = :username";
      
@@ -34,14 +34,6 @@
             /* when data is saved, take user to sign in page to sign user in */
             header("location: /confirm.html");
     
-        }catch (PDOException $e){
-            $error = array(
-                "message" => $e->getMessage()
-            );
-            print_r($error);
-            echo $userName;
-            echo $productName;
-            header("location: /cart.html");
         }
     }
 

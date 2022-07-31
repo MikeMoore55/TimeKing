@@ -10,8 +10,6 @@
 
         $username = $_POST["username"];
 
-        // add mailer to send confirmation before deleting from cart(TODO)
-
         $sql = "DELETE FROM cart_info WHERE cart_user = :username";
      
         try{
