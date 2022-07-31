@@ -1,9 +1,14 @@
 <?php
+    /* this file will be process all API requests regarding products */
     use \Psr\Http\Message\ServerRequestInterface as Request;
     use \Psr\Http\Message\ResponseInterface as Response;
 
-       // ALL
-       $app->get('/watches/all', function (Request $request, Response $response, $args) {
+    /* GET REQUESTS */
+
+    //GET ALL PRODUCTS
+
+    // ALL
+    $app->get('/watches/all', function (Request $request, Response $response, $args) {
         $sql = "SELECT * FROM product_info";
      
         try {
@@ -101,4 +106,6 @@
         }
     });
 
+    // SELECTED 
+    
 ?>

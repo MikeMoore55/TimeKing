@@ -57,7 +57,7 @@
             <h2>All Watches</h2>
             <div class="card-holder">
                 <div id="product-card" class="product-card" v-for="item in all">
-                    <form action="./src/php/selected-product.php" method="post">
+                    <form action="./src/php/products.php" method="post">
                         <textarea hidden name="selectedProductID">{{ item.watch_id }}</textarea>
                         <h4>{{ item.watch_name }}</h4>
                         <p>R{{ item.watch_price }}-00</p>
