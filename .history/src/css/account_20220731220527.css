@@ -82,39 +82,8 @@ body{
     margin: 10% 7% 2% 7%;
 }
 
-.main .user h4{
-    text-transform: capitalize;
-    margin: 10% 7% 2% 7%;
-}
-
-.main .user .btns-container{
-    position: relative;
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-.main .user .btns-container button{
-    position: relative;
-    width: 60%;
-    margin: 3% 20% 2% 20%;
-    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
-    border: none;
-    padding: 2% 2% 2% 2%;
-    font-size: 1.1em;
-}
-
-.main .user .btns-container button :active{
-    transform: scale(0.9);
-} 
-
 .main .user .info{
     display: none;
-    position: relative;
-    margin: 5%;
-    background-color: #060a0d;
-    border: 5px solid;
-    border-image: linear-gradient(90deg, #8f6B29, #FDE08D, #DF9F28) 1;
-    padding: 5% 5% 5% 5%;
 }
 
 .footer{
@@ -176,47 +145,6 @@ body{
         padding: 14% 12% 5% 12%;
     }
 
-    .main .user{
-        margin: 25% 7% 5% 7%;
-    }
-    
-    .main .user h2{
-        font-size: 2.7em;
-    }
-    
-    .main .user .kind-msg{
-        margin: 10% 5% 2% 5%;
-        font-size: 2em;
-    }
-    
-    .main .user h4{
-        text-transform: capitalize;
-        margin: 10% 7% 2% 7%;
-        font-size: 2.3em;
-    }
-    
-    .main .user .btns-container{
-        position: relative;
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    
-    .main .user .btns-container button{
-        width: 60%;
-        margin: 3% 20% 2% 20%;
-        padding: 2% 2% 2% 2%;
-        font-size: 2em;
-    }
-    
-    .main .user .btns-container button :active{
-        transform: scale(0.9);
-    } 
-    
-    .main .user .info{
-        padding: 5% 5% 5% 5%;
-        font-size: 1.7em;
-    }
-
     .footer h3{
         font-size: 2em;
     }
@@ -252,47 +180,7 @@ body{
     .main{
         position: relative;
         width: 100%;
-        padding: 7% 15% 0% 15%;
-    }
-
-    .main .user{
-        margin: 7% 7% 0% 7%;
-    }
-    
-    .main .user h2{
-        font-size: 1.8em;
-    }
-    
-    .main .user .kind-msg{
-        margin: 5% 5% 2% 5%;
-        font-size: 1.4em;
-    }
-    
-    .main .user h4{
-        text-transform: capitalize;
-        margin: 5% 7% 2% 7%;
-        font-size: 1.8em;
-    }
-    
-    .main .user .btns-container{
-        position: relative;
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    
-    .main .user .btns-container button{
-        width: 60%;
-        margin: 2% 20% 2% 20%;
-        padding: 2% 2% 2% 2%;
-        font-size: 1.4em;
-    }
-    
-    .main .user .btns-container button :active{
-        transform: scale(0.9);
-    } 
-    
-    .main .user .info{
-      font-size: 1.3em;
+        padding: 7% 15% 3% 15%;
     }
 
     .footer h3{

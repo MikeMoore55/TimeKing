@@ -40,9 +40,9 @@
                 <button @click="displayCart()">Your Cart</button>
                 <button @click="displayPassword()">Your Password</button>
             </div>
-            <div id="email" class="info" @click="hideEmail()">Your Email: {{ user.userEmail }}</div>
-            <div id="cart" class="info" @click="hideCart()"><a href="./cart.html">Go To Cart</a></div>
-            <div id="password" class="info" @click="hidePassword()">Your Password: {{ user.userPassword }}</div>
+            <div id="email" class="info" @click="hideEmail()">Your Email:{{ user.userEmail }}</div>
+            <div id="cart" class="info" @click="hideCart()"><a href="./cart.html"></a></div>
+            <div id="password" class="info" @click="hidePassword()">{{ user.userPassword }}</div>
         </div>
     </main>
     <footer id="footer" class="footer">

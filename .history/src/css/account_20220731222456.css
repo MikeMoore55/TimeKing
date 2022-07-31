@@ -252,11 +252,11 @@ body{
     .main{
         position: relative;
         width: 100%;
-        padding: 7% 15% 0% 15%;
+        padding: 7% 15% 3% 15%;
     }
 
     .main .user{
-        margin: 7% 7% 0% 7%;
+        margin: 7% 7% 5% 7%;
     }
     
     .main .user h2{
