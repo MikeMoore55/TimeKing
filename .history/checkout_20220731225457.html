@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Titillium+Web&display=swap" rel="stylesheet">
     <!-- css link -->
-    <link rel="stylesheet" href="./src/css/checkout.css">
+    <link rel="stylesheet" href="./src/css/about.css">
     <!-- vue cdn -->
     <script src="https://unpkg.com/vue@3"></script>
     <!-- axios cdn -->
@@ -20,19 +20,14 @@
     <script src="./src/js/cart.js" defer type="module"></script>
 </head>
 <body>
-    <header id="header" class="header">
-        <h1>TimeKing</h1>
-    </header>
-
     <main id="main" class="main">
 
-        <div class="info" v-for="item in cart">
-            <p>User: {{ item.cart_user }}</p>
-            <p>Product: {{item.cart_products}}</p>
-            <p>Total: R{{item.cart_total}}-00</p>
+        <div v-for="item in cart">
+            <p>user: {{ item.cart_user }}</p>
+            <p>product: {{item.cart_products}}</p>
             <form action="./src/php/checkout.php" method="post">
                 <textarea hidden name="username">{{item.cart_user}}</textarea>
-                <input type="submit" value="Confirm Order" name="confirm" class="btn">
+                <input type="submit" value="confirm Order" name="confirm">
             </form>
             <a href="/home.html">cancel</a>
         </div>

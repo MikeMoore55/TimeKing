@@ -22,17 +22,23 @@
 <body>
     <header id="header" class="header">
         <h1>TimeKing</h1>
+        <nav id="nav" class="nav">
+            <a href="./home.html">Home</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./sign-in.html">Sign In</a>
+            <a href="./account.html">Account</a>
+        </nav>
     </header>
 
     <main id="main" class="main">
 
-        <div class="info" v-for="item in cart">
+        <div v-for="item in cart">
             <p>User: {{ item.cart_user }}</p>
             <p>Product: {{item.cart_products}}</p>
             <p>Total: R{{item.cart_total}}-00</p>
             <form action="./src/php/checkout.php" method="post">
                 <textarea hidden name="username">{{item.cart_user}}</textarea>
-                <input type="submit" value="Confirm Order" name="confirm" class="btn">
+                <input type="submit" value="confirm Order" name="confirm" class="btn">
             </form>
             <a href="/home.html">cancel</a>
         </div>
