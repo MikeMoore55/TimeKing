@@ -14,7 +14,7 @@
     <!-- css link -->
     <link rel="stylesheet" href="./src/css/home.css">
     <!-- vue cdn -->
-    <script src="https://unpkg.com/vue@3" ></script>
+    <script src="https://unpkg.com/vue@3"></script>
     <!-- axios cdn -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- js link for scrolling function -->
@@ -46,14 +46,10 @@
             <h2>Featured Watches</h2>
             <div class="card-holder">
                 <div id="product-card" class="product-card" v-for="item in featured">
-                    <form action="./src/php/selected-product.php" method="post">
-                        <textarea hidden name="selectedProductID">{{ item.watch_id }}</textarea>
-                        <h4>{{ item.watch_name }}</h4>
-                        <img v-bind:src="'./src/images/products/' + item.watch_pic">
-                        <p>R{{ item.watch_price }}-00</p>
-                        <p>{{ item.watch_rating }}/10</p>
-                        <input type="submit" name="view" value="view watch" class="btn"/>
-                    </form>
+                    <h4>{{ item.watch_name }}</h4> <p>{{item.watch_pic}}</p>
+                    <img src="'/src/images/'+ '{{item.watch_pic}}'">
+                    <p>R{{ item.watch_price }}-00</p>
+                    <p>{{ item.watch_desc }}</p>
                 </div>
             </div>
         </div>
@@ -65,10 +61,9 @@
                     <form action="./src/php/selected-product.php" method="post">
                         <textarea hidden name="selectedProductID">{{ item.watch_id }}</textarea>
                         <h4>{{ item.watch_name }}</h4>
-                        <img v-bind:src="'./src/images/products/' + item.watch_pic">
                         <p>R{{ item.watch_price }}-00</p>
                         <p>{{ item.watch_rating }}/10</p>
-                        <input type="submit" name="view" value="view watch" class="btn"/>
+                        <input type="submit" name="view" value="view watch"/>
                     </form>
                 </div>
             </div>
@@ -79,7 +74,6 @@
             <div class="card-holder">
                 <div id="product-card" class="product-card" v-for="item in upcoming">
                     <h4>{{ item.watch_name }}</h4>
-                    <img v-bind:src="'./src/images/products/' + item.watch_pic">
                     <p>R{{ item.watch_price }}-00</p>
                     <p>{{ item.watch_desc }}</p>
                 </div>

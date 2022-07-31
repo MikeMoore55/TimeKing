@@ -46,14 +46,10 @@
             <h2>Featured Watches</h2>
             <div class="card-holder">
                 <div id="product-card" class="product-card" v-for="item in featured">
-                    <form action="./src/php/selected-product.php" method="post">
-                        <textarea hidden name="selectedProductID">{{ item.watch_id }}</textarea>
-                        <h4>{{ item.watch_name }}</h4>
-                        <img v-bind:src="'./src/images/products/' + item.watch_pic">
-                        <p>R{{ item.watch_price }}-00</p>
-                        <p>{{ item.watch_rating }}/10</p>
-                        <input type="submit" name="view" value="view watch" class="btn"/>
-                    </form>
+                    <h4>{{ item.watch_name }}</h4>
+                    <img v-bind:src="'./src/images/products/' + item.watch_pic">
+                    <p>R{{ item.watch_price }}-00</p>
+                    <p>{{ item.watch_desc }}</p>
                 </div>
             </div>
         </div>

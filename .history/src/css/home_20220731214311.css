@@ -124,20 +124,6 @@ body{
     box-shadow: rgb(22, 22, 31) 7px 7px 5px 3px;
 }
 
-.main .product-card .btn{
-    position: relative;
-    width: 60%;
-    margin: 1% 20% 1% 20%;
-    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
-    border: none;
-    padding: 2% 2% 2% 2%;
-    font-size: 1.1em;
-}
-
-.main .product-card  .btn:active{
-    transform: scale(0.9);
-}
-
 .main .product-card img{
     position: relative;
     width: 100%;

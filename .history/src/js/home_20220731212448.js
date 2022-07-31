@@ -4,14 +4,14 @@ const component = {
         return{
             all : null,
             featured : null,
-            upcoming : null,
-            url : '/src/images/products/'
+            upcoming : null
         }
     },
 
     methods: {
-        getImageUrl(img){
-            url + img
+        getImageUrl(pet){
+            var images =('/src/images/products/', + pet)
+            return images
         }
     },
     mounted() {
@@ -26,7 +26,8 @@ const component = {
         //get upcoming watches
             axios
             .get('public/watches/upcoming')
-            .then( response => (this.upcoming = response.data))
+            .then( response => (this.upcoming = response.data)),
+            this.getImageUrl(pet);
         },
 }
 /* mount on main */

@@ -5,7 +5,7 @@ const component = {
             all : null,
             featured : null,
             upcoming : null,
-            url : '/src/images/products/'
+            url : /src/images/products/
         }
     },
 
@@ -26,7 +26,8 @@ const component = {
         //get upcoming watches
             axios
             .get('public/watches/upcoming')
-            .then( response => (this.upcoming = response.data))
+            .then( response => (this.upcoming = response.data)),
+            this.getImageUrl(pet);
         },
 }
 /* mount on main */
