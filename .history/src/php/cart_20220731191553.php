@@ -15,7 +15,7 @@ if (isset($_POST["cart"])) {
     $productName = $_POST["product-name"];
     $productPrice = $_POST["product-price"];
 
-    $sql = "INSERT INTO cart_info (cart_user, cart_products, cart_total) VALUES (:username, :productName, :productPrice)";
+    $sql = "INSERT INTO cart_info (cart_user, cart_products, cart_total) VALUES (:userName, :productName, :productPrice)";
 
     try{
         /* db object */
@@ -28,7 +28,7 @@ if (isset($_POST["cart"])) {
         $stmt = $conn->prepare($sql);
         
         /* binding parameters */
-        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':userName', $userName);
         $stmt->bindParam(':productName', $productName);
         $stmt->bindParam(':productPrice', $productPrice);
 
@@ -42,11 +42,9 @@ if (isset($_POST["cart"])) {
     }
     catch (PDOException $e){
         $error = array(
-            "message" => $e->getMessage()
+            "message" => $e->getMessage(),
         );
-        print_r($error);
-        echo $userName;
-        echo $productName;
+        print_r($error)
 /*         header("location: /product.html");
  */    }
 }

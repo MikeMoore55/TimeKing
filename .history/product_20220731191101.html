@@ -33,7 +33,6 @@
                     <p>{{ selectedProduct.rating }}/10</p>
                     <p>{{ selectedProduct.qty }} left</p>
                     <form action="./src/php/cart.php" method="post">
-                        <p>{{user.userDisplayName}}</p>
                         <textarea hidden name="user-name">{{user.userDisplayName}}</textarea>
                         <textarea hidden name="product-name">{{selectedProduct.name}}</textarea>
                         <textarea hidden name="product-price">{{selectedProduct.price}}</textarea>

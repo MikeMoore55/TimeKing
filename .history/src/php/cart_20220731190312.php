@@ -9,13 +9,13 @@ require __DIR__ . '/../models/db.php';
 // require user model
 require __DIR__ . '/../models/selected-product.php';
 
-if (isset($_POST["cart"])) {
+if (isset($_POST["view"])) {
 
     $username = $_POST["user-name"];
     $productName = $_POST["product-name"];
     $productPrice = $_POST["product-price"];
 
-    $sql = "INSERT INTO cart_info (cart_user, cart_products, cart_total) VALUES (:username, :productName, :productPrice)";
+    $sql = "INSERT INTO cart_info (cart_user, cart_products, cart_total) VALUES (:userName, :productName, :productPrice)";
 
     try{
         /* db object */
@@ -28,7 +28,7 @@ if (isset($_POST["cart"])) {
         $stmt = $conn->prepare($sql);
         
         /* binding parameters */
-        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':userName', $userName);
         $stmt->bindParam(':productName', $productName);
         $stmt->bindParam(':productPrice', $productPrice);
 
@@ -44,11 +44,8 @@ if (isset($_POST["cart"])) {
         $error = array(
             "message" => $e->getMessage()
         );
-        print_r($error);
-        echo $userName;
-        echo $productName;
-/*         header("location: /product.html");
- */    }
+        header("location: /product.html");
+    }
 }
 
 ?>

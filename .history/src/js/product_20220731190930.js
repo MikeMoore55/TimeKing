@@ -13,10 +13,11 @@ const component = {
     methods: {
     },
     mounted() {
+        console.log(this.selectedProduct)
     },
 }
 /* mount on main */
 window.addEventListener('DOMContentLoaded', () => {
   const app = createApp(component)
-  app.mount("#info")
+  app.mount("#main")
 })

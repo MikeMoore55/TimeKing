@@ -13,6 +13,9 @@ const component = {
     methods: {
     },
     mounted() {
+        console.log(this.selectedProduct),
+        selectedProduct,
+        user
     },
 }
 /* mount on main */

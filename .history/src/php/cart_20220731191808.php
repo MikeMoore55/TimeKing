@@ -28,7 +28,7 @@ if (isset($_POST["cart"])) {
         $stmt = $conn->prepare($sql);
         
         /* binding parameters */
-        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':userName', $username);
         $stmt->bindParam(':productName', $productName);
         $stmt->bindParam(':productPrice', $productPrice);
 
