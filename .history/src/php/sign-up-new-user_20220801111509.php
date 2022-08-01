@@ -60,28 +60,30 @@
     
         try{
 
-            /* db object */
-            $database = new DB();
+            if ($error = "") {
+                /* db object */
+                $database = new DB();
             
-            /* connect to DB */
-            $conn = $database->connect();
+                /* connect to DB */
+                $conn = $database->connect();
                 
-            /* prepared statement */
-            $stmt = $conn->prepare($sql);
+                /* prepared statement */
+                $stmt = $conn->prepare($sql);
                 
-            /* binding parameters */
-            $stmt->bindParam(':userName', $userName);
-            $stmt->bindParam(':userSurname', $userSurname);
-            $stmt->bindParam(':userDisplayName', $userDisplayName);
-            $stmt->bindParam(':userEmail', $userEmail);
-            $stmt->bindParam(':userPassword', $userPassword);
+                /* binding parameters */
+                $stmt->bindParam(':userName', $userName);
+                $stmt->bindParam(':userSurname', $userSurname);
+                $stmt->bindParam(':userDisplayName', $userDisplayName);
+                $stmt->bindParam(':userEmail', $userEmail);
+                $stmt->bindParam(':userPassword', $userPassword);
 
-            /* exucute prepared statement */
-            $result = $stmt->execute();
+                /* exucute prepared statement */
+                $result = $stmt->execute();
             
-            $database = null;
-            /* when data is saved, take user to sign in page to sign user in */
-            header("location: /sign-in.html");
+                $database = null;
+                /* when data is saved, take user to sign in page to sign user in */
+                header("location: /sign-in.html");
+            }
         }
         catch (PDOException $e){
             $error = array(

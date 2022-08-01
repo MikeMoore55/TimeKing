@@ -9,7 +9,6 @@
 
         /* backend form validation for extra security */
 
-        /* check that there is no blank value */
         if (empty(trim($_POST["name"]))) {
             $userName = "";
             $error = "name error";
@@ -49,26 +48,28 @@
             $userPassword = $_POST["password"];
             $error = "";
         }
+        
+
+        /* declare variables */
+        $userPassword = $_POST["password"];
 
         /* "sanitize" data */
         MD5($userPassword);
         htmlentities($userName && $userSurname && $userDisplayName);
         filter_var($userEmail, FILTER_SANITIZE_EMAIL);
 
-
         $sql = "INSERT INTO user_info(user_name, user_surname, user_displayname, user_email, user_password) VALUES (:userName, :userSurname, :userDisplayName, :userEmail, :userPassword);";
     
         try{
-
             /* db object */
             $database = new DB();
-            
+        
             /* connect to DB */
             $conn = $database->connect();
-                
+            
             /* prepared statement */
             $stmt = $conn->prepare($sql);
-                
+            
             /* binding parameters */
             $stmt->bindParam(':userName', $userName);
             $stmt->bindParam(':userSurname', $userSurname);
@@ -78,7 +79,7 @@
 
             /* exucute prepared statement */
             $result = $stmt->execute();
-            
+        
             $database = null;
             /* when data is saved, take user to sign in page to sign user in */
             header("location: /sign-in.html");
