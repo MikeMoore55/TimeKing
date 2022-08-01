@@ -292,8 +292,9 @@
 
     .main .product img{
         position: relative;
-        width: 40%;
-        margin: 0% 30% 0% 30%;
+        width: 80%;
+        height: 50%;
+        margin: 0% 10% 0% 10%;
     }
     
     .main .product .btn{
@@ -323,12 +324,12 @@
     }
 
     .footer h3{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     
     .footer .info a{
         margin: 1% 0% 1% 0%;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     
     .footer .info a:active{

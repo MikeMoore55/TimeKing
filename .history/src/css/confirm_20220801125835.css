@@ -12,6 +12,27 @@
     top: 0%;
 }
 
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+.header h1{
+	background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5em;
+    margin: 1% 0% 0% 2%;
+    font-weight: 900;
+    text-align: left;
+    position: relative;
+}
+
 .confirm{
     position: fixed;
     top: 20%;
@@ -27,21 +48,4 @@
     background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-}
-
-.footer{
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-}
-
-.footer p{
-    position: relative;
-    width: 100%;
-    left: 0%;
-    text-align: center;
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 0.8em;
 }

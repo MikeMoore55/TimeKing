@@ -323,12 +323,12 @@
     }
 
     .footer h3{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     
     .footer .info a{
         margin: 1% 0% 1% 0%;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     
     .footer .info a:active{

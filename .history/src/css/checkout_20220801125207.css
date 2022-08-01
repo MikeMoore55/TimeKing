@@ -17,19 +17,12 @@
 
 .main .info{
     position: fixed;
-    top: 20%;
+    top: 25%;
     width: 100%;
     text-align: center;
     color: white;
     font-family: 'Titillium Web', sans-serif;
     left: 0%;
-}
-
-.main .info h2{
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    color: white;
-    text-decoration: underline;
 }
 
 .main .info .btn{
@@ -103,7 +96,7 @@
     }
     
     .main .info{
-        font-size: 2em;
+        font-size: 2.3em;
     }
     
     .main .info .btn{
@@ -136,17 +129,13 @@
 }
 
 @media(min-width: 1000px) {
-
-    .main .info{
-        top: 17%;
-    }
     
     h1 {
         font-size: 3.3em;
     }
 
     .main .info{
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
     
     .main .info .btn{
@@ -163,17 +152,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: 'Titillium Web', sans-serif;
-        font-size: 1em;
-    }
-
-    .footer{
-        bottom: 0%;
-        left: 0%;
-        width: 100%;
-        background-color: transparent;
-    }
-    
-    .footer p{
         font-size: 1em;
     }
 }

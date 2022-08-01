@@ -60,7 +60,7 @@
     padding: 0% 0% 0% 0%;
     top: 0%;
     left: 0%;
-    padding: 20% 0% 5% 0% ;
+    padding: 20% 5% 5% 5% ;
 }
 
 .main .product{
@@ -73,7 +73,6 @@
     padding: 3% 3% 3% 3%;
     color: rgb(255, 255, 255);
     font-family: 'Titillium Web', sans-serif;
-    letter-spacing: 1px;
 }
 
 .main .product .card{
@@ -86,58 +85,40 @@
 .main .product .card .info-1{
     position: relative;
     width: 100%;
-    text-align: start;
 }
 
 .main .product .card .info-2{
-    position: relative;
-    font-size: 0.9em;
-    text-align: end;
-}
-
-.main .product .card .info-2 h4{
-    margin: 0% 0% 0% 2%;
-    font-size: 1em;
 }
 
 .main .product img{
     position: relative;
-    width: 90%;
+    width: 50%;
 }
 
-.main .product img:hover{
-    transform: scale(1.2);
-    margin-left: 5%;
+.main .product p{
+    margin: 6% 2% 5% 2%;
 }
 
 .main .product .btn{
     position: relative;
-    width: 80%;
-    margin: 1% 10% 2% 10%;
+    width: 40%;
+    margin: 1% 30% 2% 30%;
     background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
     border: none;
     padding: 2% 2% 2% 2%;
     font-size: 1em;
-}
-
-.main .product .btn:active{
-    transform: scale(0.9);
 }
 
 .main .product button{
     margin-bottom: 100%;
     position: relative;
-    width: 80%;
-    margin: 1% 10% 100% 10%;
+    width: 40%;
+    margin: 1% 30% 100% 30%;
     background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
     border: none;
     padding: 2% 2% 2% 2%;
     font-size: 1em;
     text-decoration: none;
-}
-
-.main .product button:active{
-    transform: scale(0.9);
 }
 
 .main .product button a{
@@ -205,22 +186,17 @@
 
     .main .product p{
         margin: 6% 2% 5% 2%;
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 
     .main .product h2{
-        font-size: 2em;
-    }
-
-    .main .product .card .info-2 h4{
-        margin: 0% 0% 0% 2%;
-        font-size: 1.9em;
+        font-size: 1.7em;
     }
     
     .main .product .btn{
         position: relative;
-        width: 80%;
-        margin: 1% 10% 2% 10%;
+        width: 40%;
+        margin: 1% 30% 2% 30%;
         background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
         border: none;
         padding: 2% 2% 2% 2%;
@@ -230,8 +206,8 @@
     .main .product button{
         margin-bottom: 100%;
         position: relative;
-        width: 80%;
-        margin: 1% 10% 100% 10%;
+        width: 40%;
+        margin: 1% 30% 100% 30%;
         background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
         border: none;
         padding: 2% 2% 2% 2%;
@@ -282,18 +258,6 @@
 
     .main .product h2{
         font-size: 1.2em;
-        margin: 0%;
-    }
-
-    .main .product .card .info-2 h4{
-        margin: 0% 0% 0% 2%;
-        font-size: 1.3em;
-    }
-
-    .main .product img{
-        position: relative;
-        width: 40%;
-        margin: 0% 30% 0% 30%;
     }
     
     .main .product .btn{
@@ -323,12 +287,12 @@
     }
 
     .footer h3{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     
     .footer .info a{
         margin: 1% 0% 1% 0%;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     
     .footer .info a:active{

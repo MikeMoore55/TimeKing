@@ -37,7 +37,7 @@
                     <div class="card" v-for="item in user">
                     <div class="info 1">
                         <img v-bind:src="'./src/images/products/' + selectedProduct.picture">
-                        <p>R{{ selectedProduct.price }}-00</p>
+                        <p>Price: R{{ selectedProduct.price }}-00</p>
                         <form action="./src/php/cart.php" method="post">
                             <textarea hidden name="user-name">{{user.userDisplayName}}</textarea>
                             <textarea hidden name="product-name">{{selectedProduct.name}}</textarea>
@@ -47,9 +47,9 @@
                         <button><a href="./home.html">Back</a></button>
                     </div>
                     <div class="info-2">
-                        <h4>Description:</h4><p>{{ selectedProduct.description }}</p>
-                        <h4>Rate:</h4><p>{{ selectedProduct.rating }}/10</p>
-                        <h4>Qty:</h4><p>{{ selectedProduct.qty }} left</p>
+                        <p>Description:</p><p>{{ selectedProduct.description }}</p>
+                        <p>Rate: {{ selectedProduct.rating }}/10</p>
+                        <p>Qty: {{ selectedProduct.qty }} left</p>
                         
                     </div>
                 </div>

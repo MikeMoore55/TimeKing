@@ -16,7 +16,7 @@ const component = {
     methods: {
     },
     mounted() {
-        console.log(this.selectedProduct)
+        console.log(selectedProduct)
     },
 }
 /* mount on main */

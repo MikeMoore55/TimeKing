@@ -136,10 +136,6 @@
 }
 
 @media(min-width: 1000px) {
-
-    .main .info{
-        top: 17%;
-    }
     
     h1 {
         font-size: 3.3em;

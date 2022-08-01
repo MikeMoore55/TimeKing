@@ -27,7 +27,6 @@
     <main id="main" class="main">
     <!-- make email be sent to user, use axios get [user endpoint], send email with php mailer (-- TO DO --) -->
         <div class="info" v-for="item in cart">
-            <h2>Check Out:</h2>
             <p>User: {{ item.cart_user }}</p>
             <p>Product: {{item.cart_products}}</p>
             <p>Total: R{{item.cart_total}}-00</p>
@@ -35,7 +34,6 @@
                 <textarea hidden name="username">{{item.cart_user}}</textarea>
                 <input type="submit" value="Confirm Order" name="confirm" class="btn">
             </form>
-            <a href="./product.html">cancel</a>
     </main>
     <footer id="footer" class="footer">
         <p>© 2022 TimeKing™</p>

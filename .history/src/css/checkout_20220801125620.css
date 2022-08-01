@@ -137,8 +137,8 @@
 
 @media(min-width: 1000px) {
 
-    .main .info{
-        top: 17%;
+    .main{
+        top: 15%;
     }
     
     h1 {
