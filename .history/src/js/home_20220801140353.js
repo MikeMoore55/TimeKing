@@ -9,6 +9,9 @@ const component = {
     },
 
     methods: {
+        getImageUrl(img){
+            url + img
+        }
     },
     mounted() {
         //get all watches
@@ -22,7 +25,8 @@ const component = {
         //get upcoming watches
             axios
             .get('public/watches/upcoming')
-            .then( response => (this.upcoming = response.data))
+            .then( response => (this.upcoming = response.data)),
+            console.log(this.all)
         },
         
 }

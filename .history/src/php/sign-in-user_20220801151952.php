@@ -60,9 +60,6 @@
       if ($username == $verified_username && $password == $verified_password) {
         /* create new signed in user */
         $signedInUser = new SignedInUser(TRUE, $verified_email, $verified_password, $verified_username, 0);
-
-        /* temporary measure is to store info in json file until the get request based of inputs is working */
-
         /* create json folder, so frontend can access necessary info */
         $json = json_encode($signedInUser);
         $file = file_put_contents("signedInUser.json", $json);

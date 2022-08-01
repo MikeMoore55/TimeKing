@@ -32,7 +32,5 @@
 
     /* --- POST REQUESTS --- */
 
-    // (-- TO DO --)
-
     $app->run();
 ?>

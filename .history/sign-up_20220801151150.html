@@ -22,7 +22,7 @@
     <main id="main" class="main">
         <!-- sign up form -->
         <!-- also on submit, will validate form in JS if the "required" attribute doesn't work -->
-        <form id="sign-up-form" action="/src/php/user-crud/" method="post" class="sign-up-form" onsubmit="validateForm()">
+        <form id="sign-up-form" action="/src/php/create-new-user.php" method="post" class="sign-up-form" onsubmit="validateForm()">
             <h2>Sign Up</h2> 
             <p>Name:</p>
             <input id="name" type="text" v-model="name" name="name" class="input" required/>

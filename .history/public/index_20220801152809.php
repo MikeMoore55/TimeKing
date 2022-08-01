@@ -30,9 +30,5 @@
     // cart route
     require __DIR__ . '/../src/routes/get-cart.php'; 
 
-    /* --- POST REQUESTS --- */
-
-    // (-- TO DO --)
-
     $app->run();
 ?>

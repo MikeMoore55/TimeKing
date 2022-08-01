@@ -17,8 +17,6 @@
     $app->add(new BasePathMiddleware($app));
     $app->addErrorMiddleware(true, true, true); 
 
-    /* --- GET REQUESTS --- */
-
     // product routes
 
     require __DIR__ . '/../src/routes/get-products.php'; 
@@ -29,10 +27,6 @@
 
     // cart route
     require __DIR__ . '/../src/routes/get-cart.php'; 
-
-    /* --- POST REQUESTS --- */
-
-    // (-- TO DO --)
 
     $app->run();
 ?>

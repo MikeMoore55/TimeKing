@@ -40,11 +40,9 @@
                         <img v-bind:src="'./src/images/products/' + selectedProduct.picture">
                         <p>R{{ selectedProduct.price }}-00</p>
                         <form action="./src/php/cart.php" method="post">
-                            <!-- hidden info to use in php post -->
                             <textarea hidden name="user-name">{{user.userDisplayName}}</textarea>
                             <textarea hidden name="product-name">{{selectedProduct.name}}</textarea>
                             <textarea hidden name="product-price">{{selectedProduct.price}}</textarea>
-                        <!-- need to make it so if user is signed in, they can add to cart (-- TO DO --) -->
                             <input type="submit" name="cart" value="Add to Cart" class="btn"/>
                         </form>
                         <button><a href="./home.html">Back</a></button>
