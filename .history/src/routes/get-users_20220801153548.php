@@ -1,5 +1,5 @@
 <?php
-    /* this file will be process all API requests regarding users */
+    /* this file will be process all API requests regarding products */
     use \Psr\Http\Message\ServerRequestInterface as Request;
     use \Psr\Http\Message\ResponseInterface as Response;
 
@@ -7,7 +7,7 @@
     /* will be used for matching on sign in, display info based of username, etc (-- TO DO--)*/
 
     //ALL USERS
-    $app->get('/user', function (Request $request, Response $response, $args) {
+    $app->get('/user/info', function (Request $request, Response $response, $args) {
         $sql = "SELECT * FROM user_info";
     
         try {
