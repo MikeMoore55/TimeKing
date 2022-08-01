@@ -8,26 +8,12 @@
   // require user model
   require __DIR__ . '/../models/sign-in-user.php';
 
-    if (isset($_POST["signIn"])) {
+  if (isset($_POST["signIn"])) {
 
-      /* form validation for extra security */
-
-      /* make sure there are no blank values */
-      if (empty(trim($_POST["username"]))) {
-        $username = "";
-        $error = "display name error";
-      } else {
-        $username = $_POST["username"];
-        $error = "";
-      }
-
-      if (empty(trim($_POST["password"]))) {
-          $password= "";
-          $error = "password error";
-      } else {
-          $password = $_POST["password"];
-          $error = "";
-      }
+    
+    // declare variables
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
     // "sanitizing" inputs
     MD5($password);

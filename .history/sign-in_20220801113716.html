@@ -26,8 +26,7 @@
     </header>
    <main id="main" class="main">
     <!-- sign in form -->
-    <!-- also on submit, will validate form in JS if the "required" attribute doesn't work -->
-        <form id="sign-in-form" action="/src/php/sign-in-user.php" method="post" class="sign-in-form" onsubmit="validateForm()">
+        <form id="sign-in-form" action="/src/php/sign-in-user.php" method="post" class="sign-in-form">
             <h2>Sign In</h2>
             <p>Username:</p>
             <input id="username" v-model="username" name="username" type="text" class="input" required/>
@@ -37,7 +36,7 @@
             <p id="password-err" class="error"></p>
             <p class="link-text">Don't have an account?<a class="link" href="/sign-up.html">Sign Up</a></p>
             <p class="link-text"><a class="link" href="/reset-password.html">forgot password</a></p>
-            <input name="signIn" type="submit" value="Sign In" class="btn"/>
+            <input name="signIn" type="submit" value="Sign In" class="btn" />
         </form>
    </main>
    <footer id="footer" class="footer">

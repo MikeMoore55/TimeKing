@@ -1,4 +1,4 @@
-/* secondary measure to ensure all fields are filled out and input has basic requirements */
+/* secondary measure to ensure all fields are filled out */
 
 const NameInput = document.querySelector("#name").value;
 const SurnameInput = document.querySelector("#surname").value;
@@ -29,11 +29,6 @@ function validateForm(){
         usernameErr.innerHTML = "** required **"
     }
 
-    if (UsernameInput.length > 15) {
-        usernameErr.style.display="block";
-        usernameErr.innerHTML = "** your username is to long **"
-    }
-
     if (EmailInput == "") {
         emailErr.style.display="block";
         emailErr.innerHTML = "** required **"
@@ -43,7 +38,7 @@ function validateForm(){
         passwordErr.style.display="block";
         passwordErr.innerHTML = "** required **"
     }
-    /* make sure user password is the correct length  */
+
     if (PasswordInput.length > 8 && PasswordInput < 4) {
         passwordErr.style.display="block";
         passwordErr.innerHTML = "** your password needs to be between 4 and 8 characters long **"

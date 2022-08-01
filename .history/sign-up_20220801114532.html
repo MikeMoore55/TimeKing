@@ -21,19 +21,14 @@
     </header>
     <main id="main" class="main">
         <!-- sign up form -->
-        <!-- also on submit, will validate form in JS if the "required" attribute doesn't work -->
         <form id="sign-up-form" action="/src/php/sign-up-new-user.php" method="post" class="sign-up-form" onsubmit="validateForm()">
             <h2>Sign Up</h2> 
             <p>Name:</p>
             <input id="name" type="text" v-model="name" name="name" class="input" required/>
-            <!-- will display error is wrong -->
             <p id="name-err" class="error"></p>
             <p>Surname:</p>
             <input id="surname" type="text" v-model="surname" name="surname" class="input" required/>
             <p id="surname-err" class="error"></p>
-
-            <!-- make sure user cant have same username as others [use axios GET, loop through, and use if statement] (-- TO DO --) -->
-
             <p>Username:</p>
             <input id="username" type="text" v-model="displayName" name="displayName" class="input"required/>
             <p id="username-err" class="error"></p>

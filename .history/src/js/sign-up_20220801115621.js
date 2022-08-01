@@ -1,4 +1,4 @@
-/* secondary measure to ensure all fields are filled out and input has basic requirements */
+/* secondary measure to ensure all fields are filled out */
 
 const NameInput = document.querySelector("#name").value;
 const SurnameInput = document.querySelector("#surname").value;
@@ -27,11 +27,6 @@ function validateForm(){
     if (UsernameInput == "") {
         usernameErr.style.display="block";
         usernameErr.innerHTML = "** required **"
-    }
-
-    if (UsernameInput.length > 15) {
-        usernameErr.style.display="block";
-        usernameErr.innerHTML = "** your username is to long **"
     }
 
     if (EmailInput == "") {
