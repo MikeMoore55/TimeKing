@@ -12,19 +12,19 @@
 
     /* make sure there are no blank values */
     if (empty(trim($_POST["username"]))) {
-        $username = "";
-        $error = "display name error";
+    $username = "";
+    $error = "display name error";
     } else {
-        $username = $_POST["username"];
-        $error = "";
+    $username = $_POST["username"];
+    $error = "";
     }
 
     if (empty(trim($_POST["new-password"]))) {
-        $password= "";
-        $error = "password error";
+    $password= "";
+    $error = "password error";
     } else {
-        $password = $_POST["new-password"];
-        $error = "";
+    $password = $_POST["new-password"];
+    $error = "";
     }
 
     // "sanitizing" inputs

@@ -8,24 +8,26 @@
   if (isset($_POST["signIn"])) {
     // declare variables
     
-    /* form validation for extra security */
+      /* form validation for extra security */
 
-    /* make sure there are no blank values */
-    if (empty(trim($_POST["username"]))) {
+      /* make sure there are no blank values */
+      if (empty(trim($_POST["username"]))) {
         $username = "";
         $error = "display name error";
-    } else {
+      } else {
         $username = $_POST["username"];
         $error = "";
-    }
+      }
 
-    if (empty(trim($_POST["new-password"]))) {
+      if (empty(trim($_POST["new-password"]))) {
         $password= "";
         $error = "password error";
-    } else {
+      } else {
         $password = $_POST["new-password"];
         $error = "";
-    }
+      }
+    $username = $_POST["username"];
+    $password = $_POST["new-password"];
 
     // "sanitizing" inputs
     MD5($password);
